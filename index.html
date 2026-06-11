@@ -3,725 +3,741 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Obongodu Paul Unanam — Nigerian law graduate, governance researcher, and writer. Anti-corruption law. Whistleblower protection. Public interest writing from Uyo, Nigeria."/>
-<meta name="keywords" content="Obongodu Paul Unanam, Nigeria anti-corruption, whistleblower protection Nigeria, governance researcher Nigeria, legal writer Nigeria, TheCable Nigeria, Global Policy Journal, International Law Blog, Akwa Ibom law"/>
+<meta name="description" content="Obongodu Paul Unanam is a Nigerian law graduate, governance researcher, and writer specialising in anti-corruption law and whistleblower protection in West Africa."/>
+<meta name="keywords" content="Obongodu Paul Unanam, Nigeria anti-corruption law, whistleblower protection Nigeria, governance research Nigeria, TheCable, Global Policy Journal, International Law Blog, Akwa Ibom"/>
 <meta property="og:title" content="Obongodu Paul Unanam"/>
-<meta property="og:description" content="Law. Research. Writing. From Uyo, Nigeria."/>
+<meta property="og:description" content="Nigerian law graduate. Governance researcher. Writer. Published in TheCable, Global Policy Journal, and International Law Blog."/>
 <meta property="og:type" content="website"/>
-<title>Obongodu Paul Unanam</title>
+<meta property="og:url" content="https://obongodupaulunanam.com"/>
+<title>Obongodu Paul Unanam — Law. Research. Writing.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700;1,9..144,900&family=Cabinet+Grotesk:wght@300;400;500;700&family=Instrument+Mono:ital@0;1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
-  --void:#060504;
-  --void2:#0d0b09;
-  --void3:#161310;
-  --ember:#d4813a;
-  --ember2:#f0a85a;
-  --ember-dim:#7a4a1c;
-  --parchment:#ede4d4;
-  --parchment2:#c8b99a;
-  --ash:#6e6254;
-  --line:#221e18;
-  --line2:#2e2820;
-  --line3:#3d3628;
+  --paper:#faf8f4;
+  --paper2:#f2ede4;
+  --paper3:#e8e0d0;
+  --ink:#1a1714;
+  --ink2:#3d3830;
+  --ink3:#6b6358;
+  --gold:#b8732a;
+  --gold2:#d4913e;
+  --gold-pale:#f5e6d0;
+  --rule:#d8cfc0;
+  --rule2:#e8e0d0;
+  --white:#ffffff;
 }
 html{scroll-behavior:smooth;}
 body{
-  background:var(--void);
-  color:var(--parchment);
-  font-family:'Cabinet Grotesk',sans-serif;
-  font-weight:300;
-  font-size:17px;
-  line-height:1.8;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Inter',sans-serif;
+  font-weight:400;
+  font-size:16px;
+  line-height:1.75;
   overflow-x:hidden;
-  cursor:none;
 }
-#cur{position:fixed;width:6px;height:6px;background:var(--ember);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);}
-#cur2{position:fixed;width:28px;height:28px;border:1px solid rgba(212,129,58,.3);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .3s,height .3s;}
-body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23g)' opacity='.04'/%3E%3C/svg%3E");pointer-events:none;z-index:9990;}
 
 /* NAV */
 nav{
   position:fixed;top:0;left:0;right:0;z-index:100;
-  display:flex;justify-content:space-between;align-items:center;
-  padding:1.5rem 4rem;
-  transition:background .4s,border-color .4s;
-  border-bottom:1px solid transparent;
+  background:rgba(250,248,244,0.96);
+  border-bottom:1px solid var(--rule);
+  backdrop-filter:blur(8px);
+  padding:0 4rem;
+  height:60px;
+  display:flex;align-items:center;justify-content:space-between;
 }
-nav.stuck{background:rgba(6,5,4,.95);border-color:var(--line);backdrop-filter:blur(12px);}
-.nav-id{font-family:'Instrument Mono',monospace;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ember);}
+.nav-name{
+  font-family:'JetBrains Mono',monospace;
+  font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--gold);font-weight:500;
+}
 .nav-links{display:flex;gap:2.5rem;list-style:none;}
-.nav-links a{font-family:'Instrument Mono',monospace;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ash);text-decoration:none;transition:color .2s;}
-.nav-links a:hover{color:var(--parchment);}
+.nav-links a{
+  font-family:'Inter',sans-serif;font-size:.8rem;
+  color:var(--ink3);text-decoration:none;
+  transition:color .2s;font-weight:400;
+}
+.nav-links a:hover{color:var(--ink);}
 
 /* HERO */
 .hero{
   min-height:100vh;
+  display:flex;flex-direction:column;justify-content:center;
+  padding:8rem 4rem 5rem;
+  max-width:900px;
   position:relative;
-  display:flex;align-items:flex-end;
-  overflow:hidden;
-  padding-bottom:6rem;
 }
-.hero-bg{
-  position:absolute;inset:0;
-  background:
-    radial-gradient(ellipse 60% 50% at 70% 50%, rgba(212,129,58,.05) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 60% at 30% 80%, rgba(212,129,58,.03) 0%, transparent 60%);
+.hero::after{
+  content:'';
+  position:fixed;top:0;right:0;bottom:0;
+  width:40%;
+  background:linear-gradient(135deg,var(--paper2) 0%,var(--paper3) 100%);
+  z-index:-1;
+  pointer-events:none;
 }
-.hero-grid{
-  position:absolute;inset:0;
-  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
-  background-size:80px 80px;
-  opacity:.25;
-}
-.hero-bg-word{
-  position:absolute;
-  top:50%;right:0;
-  transform:translateY(-50%);
-  font-family:'Fraunces',serif;font-style:italic;font-weight:900;
-  font-size:clamp(10rem,20vw,22rem);
-  color:rgba(212,129,58,.04);
-  white-space:nowrap;pointer-events:none;user-select:none;
-  line-height:1;letter-spacing:-.04em;
-}
-.hero-content{
-  position:relative;z-index:2;
-  padding:0 4rem;
-  max-width:860px;
-}
-.eyebrow{
-  font-family:'Instrument Mono',monospace;font-size:.6rem;
-  letter-spacing:.22em;text-transform:uppercase;
-  color:var(--ember);margin-bottom:2rem;
-  opacity:0;animation:up .8s ease .2s forwards;
+.hero-tag{
+  font-family:'JetBrains Mono',monospace;
+  font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:2rem;
+  opacity:0;animation:fadeup .8s ease .2s forwards;
 }
 h1{
-  font-family:'Fraunces',serif;font-weight:900;
-  font-size:clamp(4.5rem,10vw,9rem);
-  line-height:.95;letter-spacing:-.03em;
-  margin-bottom:2.5rem;
-  opacity:0;animation:up 1s ease .4s forwards;
+  font-family:'Lora',serif;
+  font-size:clamp(2.8rem,6vw,5rem);
+  font-weight:700;line-height:1.1;
+  letter-spacing:-.02em;
+  margin-bottom:1.5rem;
+  opacity:0;animation:fadeup .9s ease .4s forwards;
 }
-h1 .line1{display:block;}
-h1 .line2{display:block;font-weight:300;font-style:italic;}
-h1 .line3{display:block;color:var(--ember);}
-.hero-rule{
+h1 em{font-style:italic;color:var(--gold);}
+.hero-line{
   width:0;height:2px;
-  background:linear-gradient(to right,var(--ember),transparent);
-  margin-bottom:2.5rem;
-  animation:growrule 1s ease .8s forwards;
+  background:linear-gradient(to right,var(--gold),transparent);
+  margin-bottom:2rem;
+  animation:growline 1s ease .8s forwards;
 }
-.hero-bio{
-  font-size:1.12rem;color:var(--parchment2);
-  line-height:1.95;max-width:520px;
-  opacity:0;animation:up .9s ease 1s forwards;
+.hero-intro{
+  font-family:'Lora',serif;
+  font-size:1.2rem;color:var(--ink2);
+  line-height:1.9;max-width:560px;
+  font-style:italic;
+  opacity:0;animation:fadeup .9s ease 1s forwards;
+}
+.hero-body{
+  font-size:1rem;color:var(--ink3);
+  line-height:1.9;max-width:540px;
+  margin-top:1.2rem;
+  opacity:0;animation:fadeup .9s ease 1.1s forwards;
 }
 .hero-chips{
-  display:flex;flex-wrap:wrap;gap:.55rem;
-  margin-top:2.5rem;
-  opacity:0;animation:up .8s ease 1.2s forwards;
+  display:flex;flex-wrap:wrap;gap:.5rem;
+  margin-top:2rem;
+  opacity:0;animation:fadeup .8s ease 1.3s forwards;
 }
 .chip{
-  font-family:'Instrument Mono',monospace;font-size:.5rem;
-  letter-spacing:.14em;text-transform:uppercase;
-  color:var(--ash);border:1px solid var(--line3);
-  padding:.3rem .85rem;
+  font-family:'JetBrains Mono',monospace;
+  font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink3);border:1px solid var(--rule);
+  padding:.3rem .85rem;background:var(--white);
 }
-.hero-location{
-  margin-top:3rem;
-  font-family:'Instrument Mono',monospace;font-size:.55rem;
-  letter-spacing:.18em;text-transform:uppercase;color:var(--line3);
-  opacity:0;animation:up .8s ease 1.4s forwards;
+.hero-cta{
+  margin-top:2.5rem;
+  opacity:0;animation:fadeup .8s ease 1.5s forwards;
 }
-.hero-scroll{
-  position:absolute;bottom:3rem;right:4rem;
-  font-family:'Instrument Mono',monospace;font-size:.5rem;
-  letter-spacing:.2em;text-transform:uppercase;
-  color:var(--line3);writing-mode:vertical-rl;
-  opacity:0;animation:up .8s ease 1.6s forwards;
+.btn{
+  display:inline-block;
+  font-family:'Inter',sans-serif;font-size:.82rem;font-weight:500;
+  color:var(--white);background:var(--ink);
+  padding:.75rem 1.8rem;text-decoration:none;
+  transition:background .2s;letter-spacing:.02em;
 }
+.btn:hover{background:var(--gold);}
+.btn-outline{
+  color:var(--ink);background:transparent;
+  border:1px solid var(--rule);margin-left:1rem;
+}
+.btn-outline:hover{background:var(--ink);color:var(--white);border-color:var(--ink);}
+
+/* SECTION BASE */
+.section{padding:6rem 4rem;max-width:960px;margin:0 auto;}
+.section-full{padding:6rem 4rem;}
+.sec-label{
+  font-family:'JetBrains Mono',monospace;
+  font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold);
+  display:flex;align-items:center;gap:1.5rem;
+  margin-bottom:3rem;
+}
+.sec-label::after{content:'';flex:1;height:1px;background:var(--rule);}
+h2{
+  font-family:'Lora',serif;font-weight:600;
+  font-size:clamp(1.8rem,3.5vw,2.6rem);
+  line-height:1.2;margin-bottom:1.5rem;
+  letter-spacing:-.01em;
+}
+h2 em{font-style:italic;color:var(--gold);}
 
 /* DIVIDER */
-.rule{height:1px;background:linear-gradient(to right,transparent,var(--line2) 20%,var(--line2) 80%,transparent);margin:0 4rem;}
-
-/* SECTIONS */
-section{padding:6rem 4rem;max-width:1100px;margin:0 auto;}
-.lbl{
-  font-family:'Instrument Mono',monospace;font-size:.56rem;
-  letter-spacing:.25em;text-transform:uppercase;color:var(--ember);
-  display:flex;align-items:center;gap:1.5rem;margin-bottom:3.5rem;
-}
-.lbl::after{content:'';flex:1;height:1px;background:var(--line);}
-h2{
-  font-family:'Fraunces',serif;font-weight:300;
-  font-size:clamp(2rem,4vw,3rem);line-height:1.15;margin-bottom:2rem;
-}
-h2 em{font-style:italic;color:var(--ember);}
-h2 strong{font-weight:900;}
+.divider{height:1px;background:var(--rule2);margin:0 4rem;}
 
 /* ABOUT */
-.about-grid{display:grid;grid-template-columns:320px 1fr;gap:6rem;align-items:start;}
-.about-left .bignumber{
-  font-family:'Fraunces',serif;font-style:italic;font-weight:900;
-  font-size:9rem;color:rgba(212,129,58,.07);
-  line-height:.85;margin-bottom:1.5rem;user-select:none;
+.about-grid{display:grid;grid-template-columns:1fr 1.8fr;gap:5rem;align-items:start;}
+.about-left h2{font-size:2rem;}
+.about-sidebar{
+  margin-top:2.5rem;padding-top:2rem;
+  border-top:1px solid var(--rule);
 }
-.about-left h2{font-size:2.2rem;}
-.about-meta{
-  margin-top:3rem;padding-top:2rem;border-top:1px solid var(--line);
-  font-family:'Instrument Mono',monospace;font-size:.53rem;
-  letter-spacing:.14em;text-transform:uppercase;color:var(--ash);line-height:2.2;
+.sidebar-item{margin-bottom:1.5rem;}
+.sidebar-label{
+  font-family:'JetBrains Mono',monospace;
+  font-size:.52rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:.3rem;
 }
-.about-right p{font-size:1.05rem;color:var(--parchment2);margin-bottom:1.4rem;line-height:2;}
-.about-right p:first-child{font-size:1.12rem;color:var(--parchment);}
-.about-right strong{color:var(--ember2);font-weight:500;}
+.sidebar-val{font-size:.88rem;color:var(--ink3);line-height:1.6;}
+.about-right p{
+  font-size:1rem;color:var(--ink2);
+  margin-bottom:1.3rem;line-height:1.9;
+}
+.about-right p:first-child{
+  font-family:'Lora',serif;font-size:1.12rem;
+  font-style:italic;color:var(--ink);
+}
+.about-right strong{color:var(--gold);font-weight:600;}
 
-/* WORK */
-.work-list{margin-top:1rem;}
-.work-item{
-  display:grid;grid-template-columns:64px 1fr 110px;gap:2.5rem;
-  align-items:start;padding:3rem 0;
-  border-bottom:1px solid var(--line);
-  position:relative;overflow:hidden;
-  transition:background .3s;
+/* WRITING */
+.writing-bg{background:var(--paper2);}
+.writing-list{margin-top:1rem;}
+.writing-item{
+  display:grid;grid-template-columns:48px 1fr;gap:2rem;
+  padding:2.5rem 0;border-bottom:1px solid var(--rule);
+  position:relative;
+  transition:background .25s;
 }
-.work-item:first-child{border-top:1px solid var(--line);}
-.work-item::before{
-  content:'';position:absolute;inset:0;
-  background:var(--void2);opacity:0;transition:opacity .3s;z-index:0;
+.writing-item:first-child{border-top:1px solid var(--rule);}
+.writing-item:hover{background:var(--white);}
+.w-num{
+  font-family:'Lora',serif;font-style:italic;font-weight:700;
+  font-size:2rem;color:var(--rule);line-height:1;padding-top:.3rem;
 }
-.work-item:hover::before{opacity:1;}
-.work-item>*{position:relative;z-index:1;}
-.wnum{
-  font-family:'Fraunces',serif;font-style:italic;font-weight:900;
-  font-size:2.6rem;color:rgba(212,129,58,.18);line-height:1;padding-top:.4rem;
+.w-body{}
+.w-source{
+  font-family:'JetBrains Mono',monospace;font-size:.52rem;
+  letter-spacing:.16em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:.5rem;
 }
-.wbody{}
-.wsource{
-  font-family:'Instrument Mono',monospace;font-size:.52rem;
-  letter-spacing:.18em;text-transform:uppercase;color:var(--ember);margin-bottom:.6rem;
+.w-title{
+  font-family:'Lora',serif;font-weight:600;font-size:1.1rem;
+  line-height:1.4;margin-bottom:.6rem;
 }
-.wtitle{
-  font-family:'Fraunces',serif;font-weight:600;font-size:1.2rem;
-  line-height:1.35;margin-bottom:.8rem;
+.w-title a{
+  color:var(--ink);text-decoration:none;
+  border-bottom:1px solid transparent;
+  transition:border-color .2s,color .2s;
 }
-.wtitle a{color:var(--parchment);text-decoration:none;transition:color .25s;}
-.wtitle a:hover{color:var(--ember2);}
-.wblurb{font-size:.93rem;color:var(--ash);line-height:1.9;max-width:560px;}
-.wside{text-align:right;}
-.wdate{
-  font-family:'Instrument Mono',monospace;font-size:.5rem;
-  letter-spacing:.12em;color:var(--ember-dim);display:block;margin-bottom:.8rem;
+.w-title a:hover{color:var(--gold);border-color:var(--gold2);}
+.w-blurb{font-size:.9rem;color:var(--ink3);line-height:1.85;max-width:580px;}
+.w-meta{
+  margin-top:.8rem;
+  font-family:'JetBrains Mono',monospace;font-size:.5rem;
+  letter-spacing:.12em;color:var(--rule);
 }
-.wlink{
-  font-family:'Instrument Mono',monospace;font-size:.52rem;
-  letter-spacing:.12em;text-transform:uppercase;
-  color:var(--ash);text-decoration:none;
-  display:inline-flex;align-items:center;gap:.4rem;transition:color .2s;
-}
-.wlink:hover{color:var(--ember2);}
-.wlink span{display:inline-block;transition:transform .2s;}
-.wlink:hover span{transform:translate(3px,-3px);}
 
 /* AWARDS */
 .awards-note{
-  font-size:1.05rem;color:var(--ash);font-style:italic;
-  max-width:480px;margin-bottom:4rem;line-height:1.95;
+  font-family:'Lora',serif;font-style:italic;
+  font-size:1rem;color:var(--ink3);
+  max-width:480px;margin-bottom:3rem;line-height:1.9;
 }
 .awards-grid{
   display:grid;grid-template-columns:repeat(3,1fr);
-  gap:1px;border:1px solid var(--line);background:var(--line);
+  gap:1.5rem;
 }
 .award{
-  background:var(--void);padding:2.8rem 2.2rem;
-  position:relative;overflow:hidden;transition:background .3s;
+  background:var(--white);border:1px solid var(--rule);
+  padding:2rem 1.8rem;
+  transition:border-color .25s,transform .25s;
 }
-.award:hover{background:var(--void2);}
-.award-ghost{
-  position:absolute;bottom:-1rem;right:.8rem;
-  font-family:'Fraunces',serif;font-style:italic;font-weight:900;
-  font-size:6rem;color:rgba(212,129,58,.04);
-  line-height:1;pointer-events:none;user-select:none;
-}
+.award:hover{border-color:var(--gold2);transform:translateY(-2px);}
 .award-badge{
-  display:inline-block;font-family:'Instrument Mono',monospace;
-  font-size:.5rem;letter-spacing:.15em;text-transform:uppercase;
-  background:var(--ember);color:var(--void);
-  padding:.25rem .75rem;margin-bottom:1.2rem;
+  display:inline-block;
+  font-family:'JetBrains Mono',monospace;font-size:.48rem;
+  letter-spacing:.14em;text-transform:uppercase;
+  color:var(--white);background:var(--gold);
+  padding:.22rem .7rem;margin-bottom:1rem;
 }
 .award-title{
-  font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem;
-  line-height:1.4;color:var(--parchment);margin-bottom:.5rem;
+  font-family:'Lora',serif;font-weight:600;font-size:1rem;
+  line-height:1.4;color:var(--ink);margin-bottom:.4rem;
 }
-.award-sub{font-family:'Instrument Mono',monospace;font-size:.52rem;letter-spacing:.1em;color:var(--ash);}
+.award-sub{
+  font-family:'JetBrains Mono',monospace;font-size:.5rem;
+  letter-spacing:.1em;color:var(--ink3);
+}
+
+/* BLOG */
+.blog-intro{
+  font-size:1rem;color:var(--ink3);
+  max-width:520px;margin-bottom:3rem;line-height:1.9;
+}
+.blog-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+.blog-card{
+  background:var(--white);border:1px solid var(--rule);
+  padding:2.2rem;
+  transition:border-color .25s,box-shadow .25s;
+  text-decoration:none;display:block;
+}
+.blog-card:hover{border-color:var(--gold2);box-shadow:0 4px 20px rgba(0,0,0,.06);}
+.blog-date{
+  font-family:'JetBrains Mono',monospace;font-size:.5rem;
+  letter-spacing:.14em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:.8rem;display:block;
+}
+.blog-title{
+  font-family:'Lora',serif;font-weight:600;font-size:1.05rem;
+  color:var(--ink);line-height:1.4;margin-bottom:.7rem;
+}
+.blog-blurb{font-size:.88rem;color:var(--ink3);line-height:1.8;}
+.blog-read{
+  margin-top:1.2rem;
+  font-family:'JetBrains Mono',monospace;font-size:.5rem;
+  letter-spacing:.14em;text-transform:uppercase;
+  color:var(--gold);
+}
+.blog-coming{
+  grid-column:1/-1;
+  background:var(--paper2);border:1px dashed var(--rule);
+  padding:2.5rem;text-align:center;
+}
+.blog-coming p{
+  font-family:'Lora',serif;font-style:italic;
+  font-size:1rem;color:var(--ink3);line-height:1.85;
+}
 
 /* RESEARCH */
+.research-bg{background:var(--paper2);}
 .research-grid{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:0;border:1px solid var(--line);
-  margin-top:2rem;
+  display:grid;grid-template-columns:1fr 1fr;gap:0;
+  border:1px solid var(--rule);
+  margin-top:1rem;
 }
-.ritem{
-  padding:3rem 2.5rem;
-  border-right:1px solid var(--line);
-  border-bottom:1px solid var(--line);
-  transition:background .3s;
+.r-item{
+  padding:2.5rem 2.2rem;
+  border-right:1px solid var(--rule);
+  border-bottom:1px solid var(--rule);
+  transition:background .25s;
 }
-.ritem:hover{background:var(--void2);}
-.ritem:nth-child(even){border-right:none;}
-.ritem:nth-last-child(-n+2){border-bottom:none;}
-.rnum{
-  font-family:'Fraunces',serif;font-style:italic;font-weight:900;
-  font-size:3.2rem;color:rgba(212,129,58,.1);line-height:1;margin-bottom:1rem;
+.r-item:hover{background:var(--white);}
+.r-item:nth-child(even){border-right:none;}
+.r-item:nth-last-child(-n+2){border-bottom:none;}
+.r-num{
+  font-family:'Lora',serif;font-style:italic;font-weight:700;
+  font-size:2.5rem;color:var(--rule);line-height:1;margin-bottom:.8rem;
 }
-.rtitle{
-  font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem;
-  color:var(--parchment);margin-bottom:.8rem;line-height:1.3;
+.r-title{
+  font-family:'Lora',serif;font-weight:600;font-size:1rem;
+  color:var(--ink);margin-bottom:.6rem;line-height:1.3;
 }
-.rbody{font-size:.9rem;color:var(--ash);line-height:1.9;}
+.r-body{font-size:.88rem;color:var(--ink3);line-height:1.85;}
 
 /* CONTACT */
-.contact-section{
-  background:var(--void2);border-top:1px solid var(--line);
-  padding:7rem 4rem;position:relative;overflow:hidden;
+.contact-bg{
+  background:var(--ink);color:var(--paper);
+  padding:7rem 4rem;
 }
-.contact-section::before{
-  content:'';position:absolute;top:-250px;right:-250px;
-  width:600px;height:600px;border-radius:50%;
-  background:radial-gradient(circle,rgba(212,129,58,.05) 0%,transparent 65%);
-  pointer-events:none;
-}
-.contact-inner{max-width:680px;position:relative;z-index:1;}
-.contact-section h2{font-size:clamp(2.5rem,5vw,4rem);}
+.contact-inner{max-width:660px;}
+.contact-bg .sec-label{color:var(--gold2);}
+.contact-bg .sec-label::after{background:#2e2a24;}
+.contact-bg h2{color:var(--paper);}
+.contact-bg h2 em{color:var(--gold2);}
 .contact-body{
-  font-size:1.08rem;color:var(--ash);
-  margin:2rem 0 3.5rem;line-height:2;max-width:500px;
+  font-size:1rem;color:#8a8178;
+  margin:1.5rem 0 3rem;line-height:1.95;max-width:480px;
 }
 .contact-email{
-  display:inline-flex;align-items:center;gap:1rem;
-  font-family:'Fraunces',serif;font-weight:400;font-size:1.5rem;
-  color:var(--parchment);text-decoration:none;
-  border-bottom:1px solid var(--ember-dim);padding-bottom:.4rem;
-  transition:color .25s,border-color .25s;
+  display:inline-flex;align-items:center;gap:.8rem;
+  font-family:'Lora',serif;font-size:1.4rem;
+  color:var(--paper);text-decoration:none;
+  border-bottom:1px solid #3d3830;padding-bottom:.3rem;
+  transition:color .2s,border-color .2s;
 }
-.contact-email:hover{color:var(--ember2);border-color:var(--ember);}
-.contact-email .arr{font-size:1rem;color:var(--ember-dim);transition:transform .25s,color .25s;}
-.contact-email:hover .arr{transform:translate(4px,-4px);color:var(--ember);}
-.contact-foot{
-  margin-top:4.5rem;
-  font-family:'Instrument Mono',monospace;font-size:.52rem;
-  letter-spacing:.16em;text-transform:uppercase;color:var(--line3);
+.contact-email:hover{color:var(--gold2);border-color:var(--gold);}
+.contact-note{
+  margin-top:4rem;
+  font-family:'JetBrains Mono',monospace;font-size:.52rem;
+  letter-spacing:.15em;text-transform:uppercase;color:#3d3830;
 }
 
 /* FOOTER */
 footer{
-  background:var(--void);border-top:1px solid var(--line);
-  padding:2rem 4rem;
+  background:var(--ink);border-top:1px solid #1e1b16;
+  padding:1.8rem 4rem;
   display:flex;justify-content:space-between;align-items:center;
   flex-wrap:wrap;gap:1rem;
 }
-.fl{font-family:'Instrument Mono',monospace;font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:var(--line3);}
-.fr{font-family:'Fraunces',serif;font-style:italic;font-size:.9rem;color:var(--line3);}
+.f-left{
+  font-family:'JetBrains Mono',monospace;font-size:.5rem;
+  letter-spacing:.12em;text-transform:uppercase;color:#3d3830;
+}
+.f-right{
+  font-family:'Lora',serif;font-style:italic;
+  font-size:.85rem;color:#3d3830;
+}
 
 /* REVEAL */
-.r{opacity:1;transform:translateY(0);}
+.reveal{
+  opacity:0;transform:translateY(20px);
+  transition:opacity .8s ease,transform .8s ease;
+}
+.reveal.on{opacity:1;transform:translateY(0);}
+.d1{transition-delay:.1s;}
+.d2{transition-delay:.2s;}
+.d3{transition-delay:.3s;}
 
-/* ANIMATIONS */
-@keyframes up{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
-@keyframes growrule{from{width:0;}to{width:56px;}}
+/* KEYFRAMES */
+@keyframes fadeup{
+  from{opacity:0;transform:translateY(20px);}
+  to{opacity:1;transform:translateY(0);}
+}
+@keyframes growline{from{width:0;}to{width:56px;}}
 
 /* RESPONSIVE */
-@media(max-width:960px){
-  nav{padding:1.2rem 2rem;}
+@media(max-width:900px){
+  nav{padding:0 1.5rem;}
   .nav-links{gap:1.5rem;}
-  .hero-content{padding:0 2rem;}
-  section{padding:4rem 2rem;}
-  .rule{margin:0 2rem;}
-  .about-grid{grid-template-columns:1fr;gap:2.5rem;}
-  .about-left .bignumber{font-size:5rem;}
+  .hero{padding:7rem 1.5rem 4rem;}
+  .hero::after{display:none;}
+  .section,.section-full{padding:4rem 1.5rem;}
+  .divider{margin:0 1.5rem;}
+  .about-grid{grid-template-columns:1fr;gap:2rem;}
   .awards-grid{grid-template-columns:1fr 1fr;}
+  .blog-grid{grid-template-columns:1fr;}
   .research-grid{grid-template-columns:1fr;}
-  .ritem{border-right:none;}
-  .ritem:nth-last-child(-n+2){border-bottom:1px solid var(--line);}
-  .ritem:last-child{border-bottom:none;}
-  .work-item{grid-template-columns:50px 1fr;}
-  .wside{display:none;}
-  .contact-section{padding:4rem 2rem;}
-  footer{padding:1.5rem 2rem;flex-direction:column;align-items:flex-start;}
-  .hero-scroll{display:none;}
+  .r-item{border-right:none;}
+  .r-item:nth-last-child(-n+2){border-bottom:1px solid var(--rule);}
+  .r-item:last-child{border-bottom:none;}
+  .writing-item{grid-template-columns:40px 1fr;gap:1.2rem;}
+  .contact-bg{padding:4rem 1.5rem;}
+  footer{padding:1.5rem;flex-direction:column;align-items:flex-start;}
 }
-@media(max-width:600px){
+@media(max-width:580px){
   .nav-links{display:none;}
-  h1{font-size:3.5rem;}
+  h1{font-size:2.6rem;}
   .awards-grid{grid-template-columns:1fr;}
-  .hero-bg-word{font-size:8rem;}
+  .btn-outline{margin-left:0;margin-top:.8rem;display:inline-block;}
 }
 </style>
 </head>
 <body>
 
-<div id="cur"></div>
-<div id="cur2"></div>
-
-<nav id="mainnav">
-  <span class="nav-id">Obongodu Paul Unanam</span>
+<nav>
+  <span class="nav-name">Obongodu Paul Unanam</span>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
-    <li><a href="#work">Writing</a></li>
+    <li><a href="#writing">Writing</a></li>
     <li><a href="#awards">Recognition</a></li>
-    <li><a href="#research">Research</a></li>
+    <li><a href="#blog">The Accountability Gap</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
+<!-- HERO -->
 <div class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-grid"></div>
-  <div class="hero-bg-word">Lex</div>
-
-  <div class="hero-content">
-    <p class="eyebrow">Law Graduate &nbsp; Researcher &nbsp; Writer</p>
-    <h1>
-      <span class="line1">Obongodu</span>
-      <span class="line2">Paul</span>
-      <span class="line3">Unanam</span>
-    </h1>
-    <div class="hero-rule"></div>
-    <p class="hero-bio">
-      Nigerian law sits between two realities: what the statutes say and what the institutions do.
-      I write from that gap. As a researcher, as a commentator, and as a writer who believes
-      accountability needs language that actually lands.
-    </p>
-    <div class="hero-chips">
-      <span class="chip">Anti-Corruption Law</span>
-      <span class="chip">Whistleblower Protection</span>
-      <span class="chip">Governance Research</span>
-      <span class="chip">Public Interest Writing</span>
-      <span class="chip">LL.B University of Uyo 2025</span>
-    </div>
-    <p class="hero-location">Uyo &nbsp; Akwa Ibom &nbsp; Nigeria</p>
+  <p class="hero-tag">Law Graduate &nbsp;&nbsp; Researcher &nbsp;&nbsp; Writer</p>
+  <h1>Obongodu Paul<br><em>Unanam</em></h1>
+  <div class="hero-line"></div>
+  <p class="hero-intro">
+    Nigerian law sits between two realities: what the statutes say and what the institutions do.
+  </p>
+  <p class="hero-body">
+    I write from that gap. I research anti-corruption law, whistleblower protection, and governance accountability in Nigeria and West Africa. I also write fiction. I have not found a good reason to keep those two things separate.
+  </p>
+  <div class="hero-chips">
+    <span class="chip">Anti-Corruption Law</span>
+    <span class="chip">Whistleblower Protection</span>
+    <span class="chip">UNCAC Implementation</span>
+    <span class="chip">Governance Research</span>
+    <span class="chip">Public Interest Writing</span>
+    <span class="chip">LL.B University of Uyo 2025</span>
   </div>
-
-  <p class="hero-scroll">Scroll to read</p>
+  <div class="hero-cta">
+    <a class="btn" href="#writing">Read My Work</a>
+    <a class="btn btn-outline" href="#contact">Get In Touch</a>
+  </div>
 </div>
 
-<div class="rule"></div>
+<div class="divider"></div>
 
 <!-- ABOUT -->
-<section id="about">
-  <p class="lbl r">Profile</p>
+<div class="section" id="about">
+  <p class="sec-label reveal">Profile</p>
   <div class="about-grid">
-    <div class="about-left r">
-      <div class="bignumber">01</div>
-      <h2>On law, writing, <em>and what sits between them.</em></h2>
-      <div class="about-meta">
-        University of Uyo<br>
-        Faculty of Law<br>
-        LL.B 2025<br><br>
-        Uyo, Akwa Ibom<br>
-        Nigeria
+    <div class="about-left reveal d1">
+      <h2>On law, writing, <em>and the gap between them.</em></h2>
+      <div class="about-sidebar">
+        <div class="sidebar-item">
+          <p class="sidebar-label">Education</p>
+          <p class="sidebar-val">LL.B, University of Uyo<br>Faculty of Law, 2025</p>
+        </div>
+        <div class="sidebar-item">
+          <p class="sidebar-label">Location</p>
+          <p class="sidebar-val">Uyo, Akwa Ibom<br>Nigeria</p>
+        </div>
+        <div class="sidebar-item">
+          <p class="sidebar-label">Specialisation</p>
+          <p class="sidebar-val">Anti-Corruption Law<br>Whistleblower Protection<br>ECOWAS Accountability</p>
+        </div>
       </div>
     </div>
-    <div class="about-right r">
+    <div class="about-right reveal d2">
       <p>
-        I graduated from the <strong>University of Uyo Faculty of Law</strong> in 2025.
-        My undergraduate dissertation examined Nigeria's anti-corruption legal framework,
-        specifically the gap between what the statutes say and what the institutions actually do.
-        That question has stayed with me.
+        I graduated from the University of Uyo Faculty of Law in 2025. My dissertation looked at Nigeria's anti-corruption legal framework and asked a question I still have not stopped asking: why does enforcement fail so consistently when the legislation says otherwise?
       </p>
       <p>
-        I research anti-corruption law, UNCAC implementation, asset recovery under POCA,
-        and whistleblower protection. The question I keep returning to is how the African human
-        rights system deals with the protection of people who report wrongdoing. The short answer
-        is: badly. The longer answer is what most of my academic writing is about.
+        Most of my research sits at the intersection of <strong>anti-corruption institutional design</strong>, <strong>UNCAC implementation</strong>, and <strong>whistleblower protection</strong>. I am particularly interested in how the African human rights system handles people who report wrongdoing. The short answer is: not well. The longer answer is what I keep publishing about.
       </p>
       <p>
-        I also write fiction and essays. The best governance writing and the best storytelling
-        share something: they make you feel the weight of something you could previously walk past.
-        That is what I am trying to do in both modes, and the reason I cannot fully separate them.
+        I also write fiction and personal essays. I think the best governance writing and the best storytelling do the same thing: they make you feel the weight of something you could previously walk past without noticing. That is what I am trying to do in both forms.
       </p>
       <p>
-        I interned at the <strong>Akwa Ibom State Ministry of Justice</strong> during my studies,
-        and at Nwoko and Co, Access Law House, and Humanity Voice Foundation. I am open to
-        research collaboration, legal commentary, policy writing, and editorial commissions.
+        I interned at the Akwa Ibom State Ministry of Justice during my studies, and at Nwoko and Co, Access Law House, and Humanity Voice Foundation. I am open to research collaboration, legal commentary, policy writing, and editorial commissions.
       </p>
     </div>
   </div>
-</section>
+</div>
 
-<div class="rule"></div>
+<div class="divider"></div>
 
 <!-- WRITING -->
-<section id="work">
-  <p class="lbl r">Published Writing</p>
-  <h2 class="r">What I have <em>put into the world.</em></h2>
+<div class="writing-bg" id="writing">
+  <div class="section">
+    <p class="sec-label reveal">Published Writing</p>
+    <h2 class="reveal">What I have <em>put into the world.</em></h2>
 
-  <div class="work-list">
+    <div class="writing-list">
 
-    <div class="work-item r">
-      <div class="wnum">01</div>
-      <div class="wbody">
-        <p class="wsource">TheCable &nbsp; May 28, 2026</p>
-        <p class="wtitle">
-          <a href="https://www.thecable.ng/government-built-a-whistleblowing-portal-but-forgot-to-enact-laws-to-make-whistleblowing-safe/" target="_blank" rel="noopener">
-            Government Built a Whistleblowing Portal But Forgot to Enact Laws to Make Whistleblowing Safe
-          </a>
-        </p>
-        <p class="wblurb">
-          Nigeria's federal whistleblowing policy has no statutory force. You cannot enforce it in any Nigerian court.
-          This piece follows Yisa Usman, a man who used the government's own channel to report fraud,
-          then lost his job, faced criminal charges, and had police sent to his home. The law never required
-          anyone to stop and ask whether any of that was legal. Because there is no such law.
-        </p>
+      <div class="writing-item reveal">
+        <div class="w-num">01</div>
+        <div class="w-body">
+          <p class="w-source">TheCable &nbsp; May 28, 2026</p>
+          <p class="w-title">
+            <a href="https://www.thecable.ng/government-built-a-whistleblowing-portal-but-forgot-to-enact-laws-to-make-whistleblowing-safe/" target="_blank" rel="noopener">
+              Government Built a Whistleblowing Portal But Forgot to Enact Laws to Make Whistleblowing Safe
+            </a>
+          </p>
+          <p class="w-blurb">
+            Nigeria's federal whistleblowing policy has no statutory force. You cannot enforce it in any Nigerian court. This piece follows Yisa Usman, a former civil servant who used the government's own reporting channel, then spent the next year losing his job, facing criminal charges, and having police sent to his home. At no point did Nigerian law require anyone to stop and ask whether what was happening to him was legal. Because there is no such law.
+          </p>
+          <p class="w-meta">TheCable Nigeria &nbsp; Public Interest Journalism</p>
+        </div>
       </div>
-      <div class="wside">
-        <span class="wdate">May 2026</span>
-        <a class="wlink" href="https://www.thecable.ng/government-built-a-whistleblowing-portal-but-forgot-to-enact-laws-to-make-whistleblowing-safe/" target="_blank" rel="noopener">Read <span>↗</span></a>
+
+      <div class="writing-item reveal d1">
+        <div class="w-num">02</div>
+        <div class="w-body">
+          <p class="w-source">Global Policy Journal, University of Durham &nbsp; June 9, 2026</p>
+          <p class="w-title">
+            <a href="https://www.globalpolicyjournal.com/blog/09/06/2026/when-extraterritorial-enforcer-steps-back-west-africa" target="_blank" rel="noopener">
+              When the Extraterritorial Enforcer Steps Back: West Africa
+            </a>
+          </p>
+          <p class="w-blurb">
+            What happens to anti-corruption enforcement in West Africa when external pressure that historically drove compliance withdraws? Which regional institutions step into that space? This piece, published in the University of Durham's Global Policy Journal, asks what happens when the answer to both questions turns out to be: not much.
+          </p>
+          <p class="w-meta">Global Policy Journal &nbsp; University of Durham &nbsp; Policy Analysis</p>
+        </div>
       </div>
+
+      <div class="writing-item reveal d2">
+        <div class="w-num">03</div>
+        <div class="w-body">
+          <p class="w-source">International Law Blog &nbsp; June 8, 2026</p>
+          <p class="w-title">
+            <a href="https://internationallaw.blog/2026/06/08/legislative-omission-as-treaty-breach-nigeria-the-aucpcc-and-what-the-ecowas-court-has-left-undone/" target="_blank" rel="noopener">
+              Legislative Omission as Treaty Breach: Nigeria, the AUCPCC, and What the ECOWAS Court Has Left Undone
+            </a>
+          </p>
+          <p class="w-blurb">
+            Nigeria ratified a convention requiring statutory whistleblower protection in 2006. Three separate bills have died in committee since 2001. This piece argues that two decades of consistent legislative inaction has crossed from a domestic policy failure into a breach of a binding treaty obligation, and asks what the ECOWAS Court of Justice should have done about it by now.
+          </p>
+          <p class="w-meta">International Law Blog &nbsp; Academic Legal Commentary</p>
+        </div>
+      </div>
+
+      <div class="writing-item reveal">
+        <div class="w-num">04</div>
+        <div class="w-body">
+          <p class="w-source">BAC Afrocentric Story Contest &nbsp; 1st Place, 2026</p>
+          <p class="w-title">
+            <a href="https://bukkieallisonconsulting.com/the-weight-of-a-gown/" target="_blank" rel="noopener">
+              The Weight of a Gown
+            </a>
+          </p>
+          <p class="w-blurb">
+            The winning entry in the 2026 BAC Afrocentric Story Contest. A story about what it costs to become who you were told you would be, and what you carry long after the ceremony is over.
+          </p>
+          <p class="w-meta">Fiction &nbsp; 1st Place</p>
+        </div>
+      </div>
+
+      <div class="writing-item reveal d1">
+        <div class="w-num">05</div>
+        <div class="w-body">
+          <p class="w-source">Dear Aliens Writing Contest &nbsp; 3rd Place, 2026</p>
+          <p class="w-title">
+            <a href="https://www.dearaliens.net/winners/third.html" target="_blank" rel="noopener">
+              What We Do When the Light Goes Out
+            </a>
+          </p>
+          <p class="w-blurb">
+            An international competition asked what single document you would send to arriving extraterrestrials. This piece placed third from thousands of global entries. It is about generators, Nigeria, and the very human talent for filling the space between what you have and what you need. Which turns out to be most of life.
+          </p>
+          <p class="w-meta">Creative Nonfiction &nbsp; International Competition &nbsp; 3rd Place</p>
+        </div>
+      </div>
+
     </div>
-
-    <div class="work-item r">
-      <div class="wnum">02</div>
-      <div class="wbody">
-        <p class="wsource">Global Policy Journal &nbsp; June 9, 2026</p>
-        <p class="wtitle">
-          <a href="https://www.globalpolicyjournal.com/blog/09/06/2026/when-extraterritorial-enforcer-steps-back-west-africa" target="_blank" rel="noopener">
-            When the Extraterritorial Enforcer Steps Back: West Africa
-          </a>
-        </p>
-        <p class="wblurb">
-          Published in the University of Durham's Global Policy Journal. This piece asks what happens
-          to anti-corruption enforcement in West Africa when the external pressure that historically
-          drove compliance withdraws. Which regional institutions step into that space, and what
-          happens when none of them do.
-        </p>
-      </div>
-      <div class="wside">
-        <span class="wdate">June 2026</span>
-        <a class="wlink" href="https://www.globalpolicyjournal.com/blog/09/06/2026/when-extraterritorial-enforcer-steps-back-west-africa" target="_blank" rel="noopener">Read <span>↗</span></a>
-      </div>
-    </div>
-
-    <div class="work-item r">
-      <div class="wnum">03</div>
-      <div class="wbody">
-        <p class="wsource">International Law Blog &nbsp; June 8, 2026</p>
-        <p class="wtitle">
-          <a href="https://internationallaw.blog/2026/06/08/legislative-omission-as-Treaty Breach: Nigeria, the AUCPCC, and What the ECOWAS Court Has Left Undone
-          </a>
-        </p>
-        <p class="wblurb">
-          Nigeria ratified a convention requiring whistleblower protection in 2006. Three separate
-          protection bills have died in committee since 2001. This piece argues that twenty years
-          of deliberate inaction has crossed from domestic policy failure into a breach of a binding
-          treaty obligation, and asks what the ECOWAS Court should have done about it by now.
-        </p>
-      </div>
-      <div class="wside">
-        <span class="wdate">June 2026</span>
-        <a class="wlink" href="https://internationallaw.blog/2026/06/08/legislative-omission-as-treaty-breach-nigeria-the-aucpcc-and-what-the-ecowas-court-has-left-undone/" target="_blank" rel="noopener">Read <span>↗</span></a>
-      </div>
-    </div>
-
-    <div class="work-item r">
-      <div class="wnum">04</div>
-      <div class="wbody">
-        <p class="wsource">BAC Afrocentric Story Contest &nbsp; 1st Place, 2026</p>
-        <p class="wtitle">
-          <a href="https://bukkieallisonconsulting.com/the-weight-of-a-gown/" target="_blank" rel="noopener">
-            The Weight of a Gown
-          </a>
-        </p>
-        <p class="wblurb">
-          The winning entry in the 2026 BAC Afrocentric Story Contest. A story about what it costs
-          to become who you were told you would be, and what you carry long after the ceremony is over.
-        </p>
-      </div>
-      <div class="wside">
-        <span class="wdate">2026</span>
-        <a class="wlink" href="https://bukkieallisonconsulting.com/the-weight-of-a-gown/" target="_blank" rel="noopener">Read <span>↗</span></a>
-      </div>
-    </div>
-
-    <div class="work-item r">
-      <div class="wnum">05</div>
-      <div class="wbody">
-        <p class="wsource">Dear Aliens Writing Contest &nbsp; 3rd Place, 2026</p>
-        <p class="wtitle">
-          <a href="https://www.dearaliens.net/winners/third.html" target="_blank" rel="noopener">
-            What We Do When the Light Goes Out
-          </a>
-        </p>
-        <p class="wblurb">
-          An international competition asked what single document you would send to arriving
-          extraterrestrials. This piece placed third from thousands of entries. It is about
-          generators, Nigeria, and the very human talent for filling the space between what
-          you have and what you need. Which turns out to be most of life.
-        </p>
-      </div>
-      <div class="wside">
-        <span class="wdate">2026 &nbsp; International</span>
-        <a class="wlink" href="https://www.dearaliens.net/winners/third.html" target="_blank" rel="noopener">Read <span>↗</span></a>
-      </div>
-    </div>
-
   </div>
-</section>
+</div>
 
-<div class="rule"></div>
+<div class="divider"></div>
 
 <!-- AWARDS -->
-<section id="awards">
-  <p class="lbl r">Recognition</p>
-  <h2 class="r">Competitions <em>and Awards</em></h2>
-  <p class="awards-note r">Writing is how I think. These are the times other people agreed it was worth reading.</p>
+<div class="section" id="awards">
+  <p class="sec-label reveal">Recognition</p>
+  <h2 class="reveal">Competitions <em>and Awards</em></h2>
+  <p class="awards-note reveal">Writing is how I think. These are the times other people agreed it was worth reading.</p>
 
   <div class="awards-grid">
 
-    <div class="award r">
-      <div class="award-ghost">1</div>
+    <div class="award reveal">
       <span class="award-badge">1st Place</span>
       <p class="award-title">BAC Afrocentric Story Contest</p>
-      <p class="award-sub">2026 &nbsp; "The Weight of a Gown"</p>
+      <p class="award-sub">2026 &nbsp; The Weight of a Gown</p>
     </div>
 
-    <div class="award r">
-      <div class="award-ghost">2</div>
+    <div class="award reveal d1">
       <span class="award-badge">1st Place</span>
       <p class="award-title">KB Foundation Essay Competition</p>
       <p class="award-sub">2025</p>
     </div>
 
-    <div class="award r">
-      <div class="award-ghost">3</div>
+    <div class="award reveal d2">
       <span class="award-badge">3rd Place</span>
       <p class="award-title">Dear Aliens International Writing Contest</p>
-      <p class="award-sub">2026 &nbsp; "What We Do When the Light Goes Out"</p>
+      <p class="award-sub">2026 &nbsp; What We Do When the Light Goes Out</p>
     </div>
 
-    <div class="award r">
-      <div class="award-ghost">4</div>
+    <div class="award reveal d1">
       <span class="award-badge">Winner</span>
       <p class="award-title">Dafe Akpeye SAN Essay Competition</p>
       <p class="award-sub">University of Uyo Faculty of Law</p>
     </div>
 
-    <div class="award r">
-      <div class="award-ghost">5</div>
+    <div class="award reveal d2">
       <span class="award-badge">Research Grant</span>
       <p class="award-title">Grooming Center Research Grant</p>
       <p class="award-sub">2025</p>
     </div>
 
-    <div class="award r" style="display:flex;align-items:center;">
-      <p style="font-family:'Fraunces',serif;font-style:italic;font-size:1rem;color:var(--ash);line-height:1.85;">
-        More work in progress.<br>This list keeps growing.
-      </p>
+    <div class="award reveal d3" style="border-style:dashed;background:var(--paper2);display:flex;align-items:center;justify-content:center;">
+      <p style="font-family:'Lora',serif;font-style:italic;font-size:.95rem;color:var(--ink3);text-align:center;line-height:1.8;">More work<br>in progress.</p>
     </div>
 
   </div>
-</section>
+</div>
 
-<div class="rule"></div>
+<div class="divider"></div>
+
+<!-- BLOG -->
+<div class="section" id="blog">
+  <p class="sec-label reveal">The Accountability Gap</p>
+  <h2 class="reveal">Writing on Nigerian governance, <em>explained for the world.</em></h2>
+  <p class="blog-intro reveal">
+    Every few weeks I publish a piece on one specific gap in Nigerian or West African accountability. Not news. Not academic papers. Analysis written by someone who has read the statutes, followed the cases, and is not pretending any of this is fine.
+  </p>
+
+  <div class="blog-grid">
+
+    <a class="blog-card reveal" href="https://www.thecable.ng/government-built-a-whistleblowing-portal-but-forgot-to-enact-laws-to-make-whistleblowing-safe/" target="_blank" rel="noopener">
+      <span class="blog-date">Issue 001 &nbsp; May 2026</span>
+      <p class="blog-title">The Portal Invites You. The Law Does Not Protect You.</p>
+      <p class="blog-blurb">Nigeria built a whistleblowing portal in 2016 and forgot to pass the law that would have made using it safe. This is what that gap costs in practice.</p>
+      <p class="blog-read">Read on TheCable &nbsp; →</p>
+    </a>
+
+    <a class="blog-card reveal d1" href="https://internationallaw.blog/2026/06/08/legislative-omission-as-treaty-breach-nigeria-the-aucpcc-and-what-the-ecowas-court-has-left-undone/" target="_blank" rel="noopener">
+      <span class="blog-date">Issue 002 &nbsp; June 2026</span>
+      <p class="blog-title">When Doing Nothing Becomes a Treaty Breach</p>
+      <p class="blog-blurb">Nigeria agreed in 2006 to protect whistleblowers by law. Twenty years later the law still does not exist. At what point does inaction become a violation of international obligation?</p>
+      <p class="blog-read">Read on International Law Blog &nbsp; →</p>
+    </a>
+
+    <a class="blog-card reveal d2" href="https://www.globalpolicyjournal.com/blog/09/06/2026/when-extraterritorial-enforcer-steps-back-west-africa" target="_blank" rel="noopener">
+      <span class="blog-date">Issue 003 &nbsp; June 2026</span>
+      <p class="blog-title">When the Extraterritorial Enforcer Steps Back</p>
+      <p class="blog-blurb">Anti-corruption enforcement in West Africa has always depended partly on external pressure. What happens when that pressure withdraws and no regional institution steps in?</p>
+      <p class="blog-read">Read on Global Policy Journal &nbsp; →</p>
+    </a>
+
+    <div class="blog-card blog-coming reveal d3">
+      <p>New issues publish every two weeks. Subscribe at <strong>medium.com/@obongodupaulunanam</strong> to receive them directly.</p>
+    </div>
+
+  </div>
+</div>
+
+<div class="divider"></div>
 
 <!-- RESEARCH -->
-<section id="research">
-  <p class="lbl r">Research Interests</p>
-  <h2 class="r">Where my <em>thinking lives.</em></h2>
+<div class="research-bg" id="research">
+  <div class="section">
+    <p class="sec-label reveal">Research Interests</p>
+    <h2 class="reveal">Where my <em>thinking lives.</em></h2>
 
-  <div class="research-grid">
+    <div class="research-grid">
 
-    <div class="ritem r">
-      <div class="rnum">01</div>
-      <p class="rtitle">Anti-Corruption Institutional Design</p>
-      <p class="rbody">
-        The EFCC and ICPC were built on specific structural assumptions about Nigerian politics.
-        Most of those assumptions have not survived. I am interested in the gap between the
-        framework on paper and the institution in practice, and in what a redesigned architecture
-        would actually need to look like to work.
-      </p>
+      <div class="r-item reveal">
+        <div class="r-num">01</div>
+        <p class="r-title">Anti-Corruption Institutional Design</p>
+        <p class="r-body">The EFCC and ICPC were built on specific structural assumptions about Nigerian politics. Most of those assumptions have not survived. I am interested in the gap between the framework on paper and the institution in practice, and in what a redesigned architecture would actually need to look like to close it.</p>
+      </div>
+
+      <div class="r-item reveal d1">
+        <div class="r-num">02</div>
+        <p class="r-title">Whistleblower Protection</p>
+        <p class="r-body">Nigeria ratified the African Union anti-corruption convention in 2006. The convention requires member states to protect informants through legislation. That law has not been passed after nearly twenty years. I research why it keeps dying in committee, and what the African human rights system could do about it if it chose to act.</p>
+      </div>
+
+      <div class="r-item reveal d2">
+        <div class="r-num">03</div>
+        <p class="r-title">Asset Recovery</p>
+        <p class="r-body">The legal pathways for recovering stolen public funds exist on paper. Getting them to work requires navigating POCA, UNCAC, and international cooperation frameworks that each have quiet places where they tend to close. That is where I focus.</p>
+      </div>
+
+      <div class="r-item reveal d3">
+        <div class="r-num">04</div>
+        <p class="r-title">Governance Transparency and Civic Accountability</p>
+        <p class="r-body">Campaign finance non-enforcement. The architecture of public accountability in West Africa. How information moves between institutions and the people those institutions are supposed to serve, and what happens when it does not move at all.</p>
+      </div>
+
     </div>
-
-    <div class="ritem r">
-      <div class="rnum">02</div>
-      <p class="rtitle">Whistleblower Protection</p>
-      <p class="rbody">
-        Nigeria ratified the African Union anti-corruption convention in 2006.
-        The convention requires member states to protect informants through legislation.
-        That law still has not been passed after nearly twenty years. I research the
-        reasons it keeps dying in committee, and what the African human rights system
-        could actually do about it if it chose to.
-      </p>
-    </div>
-
-    <div class="ritem r">
-      <div class="rnum">03</div>
-      <p class="rtitle">Asset Recovery</p>
-      <p class="rbody">
-        The legal pathways for recovering stolen public funds exist on paper. Getting them
-        to work in practice requires navigating POCA, UNCAC, and international cooperation
-        frameworks that each have quiet places where they tend to close. That is where I look.
-      </p>
-    </div>
-
-    <div class="ritem r">
-      <div class="rnum">04</div>
-      <p class="rtitle">Governance Transparency and Civic Accountability</p>
-      <p class="rbody">
-        Campaign finance non-enforcement. The architecture of public accountability in
-        West Africa. How information moves between institutions and the people those
-        institutions are supposed to serve, and what happens when it does not move at all.
-      </p>
-    </div>
-
   </div>
-</section>
+</div>
 
 <!-- CONTACT -->
-<div class="contact-section" id="contact">
+<div class="contact-bg" id="contact">
   <div class="contact-inner">
-    <p class="lbl r">Contact</p>
-    <h2 class="r">If what you are working on <em>matters,</em> let us talk.</h2>
-    <p class="contact-body r">
-      Open to research collaboration, legal commentary, policy writing, editorial commissions,
-      and fellowship opportunities. If your work sits at the intersection of law, accountability,
-      and the African public interest, I want to hear from you.
+    <p class="sec-label reveal">Contact</p>
+    <h2 class="reveal">If what you are working on <em>matters,</em><br>let us talk.</h2>
+    <p class="contact-body reveal">
+      Open to research collaboration, legal commentary, policy writing, editorial commissions, and fellowship opportunities. If your work sits at the intersection of law, accountability, and the African public interest, I want to hear from you.
     </p>
-    <a class="contact-email r" href="mailto:obomgodu@gmail.com">
-      obomgodu@gmail.com <span class="arr">↗</span>
+    <a class="contact-email reveal" href="mailto:obomgodu@gmail.com">
+      obomgodu@gmail.com &nbsp; ↗
     </a>
-    <p class="contact-foot r">Based in Uyo, Akwa Ibom State &nbsp; Available for remote collaboration worldwide</p>
+    <p class="contact-note reveal">Based in Uyo, Akwa Ibom State, Nigeria &nbsp; Available for remote collaboration worldwide</p>
   </div>
 </div>
 
 <footer>
-  <div class="fl">© 2026 Obongodu Paul Unanam &nbsp; Uyo, Nigeria &nbsp; LL.B University of Uyo 2025</div>
-  <div class="fr">The portal invites you. The law does not protect you.</div>
+  <div class="f-left">© 2026 Obongodu Paul Unanam &nbsp; Uyo, Nigeria &nbsp; LL.B University of Uyo 2025</div>
+  <div class="f-right">The portal invites you. The law does not protect you.</div>
 </footer>
 
 <script>
-// Cursor
-const cur=document.getElementById('cur'),cur2=document.getElementById('cur2');
-let mx=0,my=0,rx=0,ry=0;
-document.addEventListener('mousemove',e=>{
-  mx=e.clientX;my=e.clientY;
-  cur.style.left=mx+'px';cur.style.top=my+'px';
-});
-(function tick(){
-  rx+=(mx-rx)*.1;ry+=(my-ry)*.1;
-  cur2.style.left=rx+'px';cur2.style.top=ry+'px';
-  requestAnimationFrame(tick);
-})();
-document.querySelectorAll('a').forEach(a=>{
-  a.addEventListener('mouseenter',()=>{cur2.style.width='44px';cur2.style.height='44px';});
-  a.addEventListener('mouseleave',()=>{cur2.style.width='28px';cur2.style.height='28px';});
-});
-// Nav
 window.addEventListener('scroll',()=>{
-  document.getElementById('mainnav').classList.toggle('stuck',scrollY>50);
+  document.querySelector('nav').style.boxShadow=scrollY>10?'0 1px 12px rgba(0,0,0,.08)':'none';
+});
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on');});
+},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>{
+  el.classList.add('on');
+  obs.observe(el);
 });
 </script>
 </body>
