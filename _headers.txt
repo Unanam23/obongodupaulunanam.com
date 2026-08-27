@@ -1,0 +1,62 @@
+/
+  Link: <https://obongodupaulunanam.com/>; rel="canonical"
+
+/issue-004.html
+  Link: <https://obongodupaulunanam.com/issue-004.html>; rel="canonical"
+/issue-004
+  Link: <https://obongodupaulunanam.com/issue-004.html>; rel="canonical"
+
+/issue-005.html
+  Link: <https://obongodupaulunanam.com/issue-005.html>; rel="canonical"
+/issue-005
+  Link: <https://obongodupaulunanam.com/issue-005.html>; rel="canonical"
+
+/issue-006.html
+  Link: <https://obongodupaulunanam.com/issue-006.html>; rel="canonical"
+/issue-006
+  Link: <https://obongodupaulunanam.com/issue-006.html>; rel="canonical"
+
+/issue-007.html
+  Link: <https://obongodupaulunanam.com/issue-007.html>; rel="canonical"
+/issue-007
+  Link: <https://obongodupaulunanam.com/issue-007.html>; rel="canonical"
+
+/issue-008.html
+  Link: <https://obongodupaulunanam.com/issue-008.html>; rel="canonical"
+/issue-008
+  Link: <https://obongodupaulunanam.com/issue-008.html>; rel="canonical"
+
+/issue-009.html
+  Link: <https://obongodupaulunanam.com/issue-009.html>; rel="canonical"
+/issue-009
+  Link: <https://obongodupaulunanam.com/issue-009.html>; rel="canonical"
+
+/issue-010.html
+  Link: <https://obongodupaulunanam.com/issue-010.html>; rel="canonical"
+/issue-010
+  Link: <https://obongodupaulunanam.com/issue-010.html>; rel="canonical"
+
+/issue-011.html
+  Link: <https://obongodupaulunanam.com/issue-011.html>; rel="canonical"
+/issue-011
+  Link: <https://obongodupaulunanam.com/issue-011.html>; rel="canonical"
+
+/issue-012.html
+  Link: <https://obongodupaulunanam.com/issue-012.html>; rel="canonical"
+/issue-012
+  Link: <https://obongodupaulunanam.com/issue-012.html>; rel="canonical"
+
+/issue-013.html
+  Link: <https://obongodupaulunanam.com/issue-013.html>; rel="canonical"
+/issue-013
+  Link: <https://obongodupaulunanam.com/issue-013.html>; rel="canonical"
+
+/issue-014.html
+  Link: <https://obongodupaulunanam.com/issue-014.html>; rel="canonical"
+/issue-014
+  Link: <https://obongodupaulunanam.com/issue-014.html>; rel="canonical"
+
+/issue-015.html
+  Link: <https://obongodupaulunanam.com/issue-015.html>; rel="canonical"
+/issue-015
+  Link: <https://obongodupaulunanam.com/issue-015.html>; rel="canonical"
