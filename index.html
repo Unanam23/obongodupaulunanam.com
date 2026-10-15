@@ -3,653 +3,272 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Obongodu Paul Unanam is a Nigerian law graduate, governance researcher, and writer specialising in anti-corruption law and whistleblower protection in West Africa."/>
-<meta name="keywords" content="Obongodu Paul Unanam, Nigeria anti-corruption law, whistleblower protection Nigeria, governance research Nigeria, TheCable, Global Policy Journal, International Law Blog, Akwa Ibom"/>
-<meta property="og:title" content="Obongodu Paul Unanam"/>
-<meta property="og:description" content="Nigerian law graduate. Governance researcher. Writer. Published in TheCable, Global Policy Journal, and International Law Blog."/>
+<meta name="description" content="The Accountability Gap is a weekly newsletter by Obongodu Paul Unanam on the distance between what Nigerian law promises and what Nigerian institutions deliver. One specific gap each Thursday, written in Uyo."/>
+<meta name="keywords" content="Obongodu Paul Unanam, The Accountability Gap, Nigeria governance newsletter, anti corruption law Nigeria, whistleblower protection Nigeria, UNCAC implementation, asset recovery Nigeria, EFCC, ICPC"/>
+<meta property="og:title" content="The Accountability Gap, by Obongodu Paul Unanam"/>
+<meta property="og:description" content="The Accountability Gap is a weekly newsletter by Obongodu Paul Unanam on the distance between what Nigerian law promises and what Nigerian institutions deliver. One specific gap each Thursday, written in Uyo."/>
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="https://obongodupaulunanam.com"/>
-<meta name="theme-color" content="#111111"/>
-<meta name="google-site-verification" content="y2cDIujhhnJPBlJq7iIs1M3qC4uu9TFdwtjCm9RRTRM" />
-<title>Obongodu Paul Unanam — Law. Research. Writing.</title>
-<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+<meta property="og:url" content="https://obongodupaulunanam.com/"/>
+<meta property="og:image" content="https://obongodupaulunanam.com/photo-hero.jpg"/>
+<link rel="canonical" href="https://obongodupaulunanam.com/"/>
+<title>Obongodu Paul Unanam — The Accountability Gap</title>
+<link rel="icon" href="favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"/>
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
-  --bg:#111111;
-  --panel:#181818;
-  --ink:#f4f2ed;
-  --ink2:#a8a39a;
-  --ink3:#6d6a63;
-  --line:#272725;
-  --line2:#333330;
-  --accent:#e8542f;
+  --paper:#f9f8f5;
+  --ink:#000000;
+  --ink2:#5b5853;
+  --hair:#d6d2c9;
+  --blue:#1b3a91;
+  --blue2:#10266b;
+  --text:'Newsreader',Georgia,'Times New Roman',serif;
+  --display:'Besley','Clarendon','Rockwell',Georgia,serif;
 }
 html{scroll-behavior:smooth;}
-body{background:var(--bg);color:var(--ink);font-family:'Manrope',sans-serif;font-weight:400;font-size:16px;line-height:1.6;overflow-x:hidden;}
-@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important;}}
-.wrap{max-width:1120px;margin:0 auto;padding:0 2.4rem;}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+body{background:var(--paper);color:var(--ink);font-family:var(--text);font-size:19px;line-height:1.62;font-variant-numeric:oldstyle-nums proportional-nums;font-optical-sizing:auto;-webkit-font-smoothing:antialiased;hyphens:manual;}
+a{color:var(--blue);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.16em;}
+a:hover{color:var(--blue2);}
+a:focus-visible{outline:2px solid var(--blue);outline-offset:3px;}
+img{display:block;max-width:100%;height:auto;}
+b,strong{font-weight:600;}
+.page{max-width:1120px;margin:0 auto;padding:0 clamp(1.1rem,4vw,3rem);}
+.col{max-width:44rem;}
 
-nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(17,17,17,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);height:64px;display:flex;align-items:center;}
-.nav-inner{width:100%;max-width:1120px;margin:0 auto;padding:0 2.4rem;display:flex;align-items:center;justify-content:space-between;}
-.nav-name{font-weight:700;font-size:1rem;color:var(--ink);text-decoration:none;letter-spacing:-.01em;}
-.nav-links{display:flex;align-items:center;gap:2rem;}
-.nav-links a{font-size:.86rem;font-weight:500;color:var(--ink2);text-decoration:none;transition:color .2s;}
-.nav-links a:hover{color:var(--ink);}
-.status-pill{display:flex;align-items:center;gap:.5rem;font-size:.82rem;color:var(--ink2);}
-.status-dot{width:6px;height:6px;border-radius:50%;background:#6fae7a;box-shadow:0 0 0 3px rgba(111,174,122,.15);}
+/* masthead */
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem 1.5rem;flex-wrap:wrap;padding:1.15rem 0 .75rem;border-bottom:2px solid var(--ink);}
+.top .name{font-weight:600;font-size:1.05rem;color:var(--ink);text-decoration:none;letter-spacing:.005em;}
+.top nav{display:flex;gap:1.35rem;flex-wrap:wrap;font-size:1rem;}
+.top nav a{color:var(--ink);text-decoration:none;}
+.top nav a:hover{text-decoration:underline;}
 
-.hero{padding:9.5rem 0 4rem;border-bottom:1px solid var(--line);}
-.hero-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:3rem;align-items:center;}
-.hero-eyebrow{font-size:.86rem;font-weight:600;color:var(--accent);margin-bottom:1.6rem;}
-h1{font-weight:800;font-size:clamp(2.3rem,5.4vw,3.6rem);line-height:1.08;letter-spacing:-.02em;color:var(--ink);margin-bottom:1.6rem;}
-.hero-sub{font-size:1.08rem;font-weight:400;color:var(--ink2);max-width:520px;line-height:1.7;margin-bottom:2.2rem;}
-.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:1.6rem;}
-.btn-primary{font-size:.88rem;font-weight:600;color:var(--bg);background:var(--ink);padding:.9rem 1.8rem;text-decoration:none;border-radius:6px;transition:background .2s;}
-.btn-primary:hover{background:var(--accent);color:var(--ink);}
-.hero-links{display:flex;gap:1.3rem;font-size:.86rem;}
-.hero-links a{color:var(--ink2);text-decoration:none;border-bottom:1px solid var(--line2);transition:color .2s;}
-.hero-links a:hover{color:var(--ink);}
-.hero-photo{border-radius:10px;overflow:hidden;border:1px solid var(--line2);}
-.hero-photo img{display:block;width:100%;height:100%;object-fit:cover;aspect-ratio:4/5;}
+.wordmark{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;margin:2.6rem 0 1.4rem;font-family:var(--display);font-weight:800;font-size:clamp(2.15rem,5.9vw,4.6rem);line-height:1;letter-spacing:-.015em;color:var(--ink);}
+.wordmark span:last-child{margin-left:auto;}
+.standfirst{font-size:1.28rem;line-height:1.45;max-width:38rem;color:var(--ink);}
+.standfirst em{font-style:italic;}
 
-.section{padding:5rem 0;border-bottom:1px solid var(--line);}
-.sec-eyebrow{font-size:.82rem;font-weight:600;color:var(--accent);margin-bottom:1rem;text-transform:uppercase;letter-spacing:.04em;}
-h2{font-weight:700;font-size:clamp(1.7rem,3.4vw,2.3rem);line-height:1.2;color:var(--ink);letter-spacing:-.015em;max-width:640px;}
-.sec-intro{font-size:1rem;color:var(--ink2);max-width:540px;margin-top:1.2rem;line-height:1.75;}
+h1,h2,.email,.pullquote p{font-variant-numeric:normal;}
 
-.about-grid{display:grid;grid-template-columns:280px 1fr;gap:3rem;margin-top:2.6rem;align-items:start;}
-.about-photo{border-radius:10px;overflow:hidden;border:1px solid var(--line2);}
-.about-photo img{display:block;width:100%;object-fit:cover;}
-.about-body p{color:var(--ink2);font-size:1rem;line-height:1.85;margin-bottom:1.2rem;}
-.about-body p:first-child{color:var(--ink);font-weight:500;}
-.about-body strong{color:var(--ink);font-weight:700;}
-.meta-row{display:flex;flex-wrap:wrap;gap:2rem;margin-top:1.6rem;padding-top:1.6rem;border-top:1px solid var(--line);}
-.meta-label{font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--ink3);margin-bottom:.3rem;}
-.meta-val{font-size:.9rem;color:var(--ink2);}
+/* sections */
+.section{padding-top:3.4rem;}
+.section h2{font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1.2;letter-spacing:-.005em;margin-bottom:1.3rem;padding-top:.9rem;border-top:1px solid var(--ink);}
 
-.quotes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2.6rem;}
-.quote-card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:2rem;display:flex;flex-direction:column;justify-content:space-between;min-height:250px;}
-.quote-text{font-size:1.05rem;font-weight:500;color:var(--ink);line-height:1.55;}
-.quote-attr{margin-top:1.4rem;padding-top:1.1rem;border-top:1px solid var(--line2);font-size:.76rem;color:var(--ink3);}
+/* lead issue */
+.lead{margin-top:2.4rem;padding-top:1.4rem;border-top:1px solid var(--ink);max-width:58rem;}
+.lead .deck,.lead .read{max-width:44rem;}
+.kicker{font-size:1rem;color:var(--ink2);margin-bottom:.8rem;font-variant-numeric:lining-nums;}
+.kicker b{font-family:var(--display);font-weight:700;color:var(--blue);font-size:1rem;margin-right:.55rem;font-variant-numeric:normal;}
+.lead h2{font-family:var(--display);font-weight:700;font-size:clamp(1.7rem,3.7vw,2.75rem);line-height:1.1;letter-spacing:-.012em;margin-bottom:1rem;}
+.lead h2 a{color:var(--ink);text-decoration:none;}
+.lead h2 a:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.08em;}
+.deck{font-style:italic;font-size:1.25rem;line-height:1.5;color:var(--ink);margin-bottom:1.1rem;}
+.read{font-size:1.1rem;}
 
-.tag-strip{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2.2rem;}
-.tag{font-size:.78rem;font-weight:500;color:var(--ink2);border:1px solid var(--line2);padding:.45rem .9rem;border-radius:20px;}
+/* ledger of issues */
+.ledger{list-style:none;border-top:1px solid var(--hair);}
+.ledger li{display:grid;grid-template-columns:3.1rem 9.6rem 1fr;column-gap:1rem;align-items:baseline;padding:.8rem 0;border-bottom:1px solid var(--hair);}
+.ledger .n{font-family:var(--display);font-weight:700;color:var(--blue);font-variant-numeric:normal;font-size:1rem;}
+.ledger .d{color:var(--ink2);font-size:.95rem;white-space:nowrap;font-variant-numeric:lining-nums;}
+.ledger .t{font-size:1.1rem;line-height:1.35;}
+.ledger .t a{color:var(--ink);text-decoration:none;}
+.ledger .t a:hover{text-decoration:underline;}
+.ledger .t i{color:var(--ink2);font-style:italic;}
 
-.writing-list{margin-top:2.6rem;}
-.w-row{display:grid;grid-template-columns:110px 1fr auto;gap:2rem;align-items:start;padding:1.8rem 0;border-top:1px solid var(--line);transition:padding-left .2s,background .2s;}
-.w-row:last-child{border-bottom:1px solid var(--line);}
-.w-row:hover{padding-left:.7rem;background:var(--panel);}
-.w-venue{font-size:.76rem;color:var(--ink3);padding-top:.2rem;line-height:1.5;}
-.w-title{font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none;line-height:1.35;display:block;margin-bottom:.6rem;letter-spacing:-.01em;}
-.w-row a.w-title:hover{color:var(--accent);}
-.w-desc{color:var(--ink2);font-size:.9rem;line-height:1.75;max-width:600px;}
-.w-arrow{color:var(--ink3);padding-top:.2rem;}
+/* published elsewhere */
+.pubs{list-style:none;border-top:1px solid var(--hair);max-width:62rem;}
+.pubs li{display:grid;grid-template-columns:13rem minmax(0,1fr);grid-template-rows:auto auto;column-gap:2rem;padding:1.05rem 0;border-bottom:1px solid var(--hair);}
+.pubs .venue{grid-column:1;grid-row:1 / 3;}
+.pubs .ptitle{grid-column:2;grid-row:1;}
+.pubs .pdesc{grid-column:2;grid-row:2;}
+.pubs .venue{font-size:.95rem;line-height:1.45;color:var(--ink2);margin-bottom:.15rem;font-variant-numeric:lining-nums;padding-top:.2rem;}
+.pubs .ptitle{font-size:1.2rem;line-height:1.3;font-weight:600;}
+.pubs .ptitle a{color:var(--ink);text-decoration:none;}
+.pubs .ptitle a:hover{text-decoration:underline;}
+.pubs .pdesc{font-size:1rem;line-height:1.5;color:#2b2925;margin-top:.35rem;max-width:44rem;}
 
-.award-list{margin-top:2.4rem;display:grid;grid-template-columns:1fr 1fr;gap:0 3rem;}
-.award-row{display:flex;justify-content:space-between;gap:1rem;padding:1rem 0;border-top:1px solid var(--line);}
-.award-list .award-row:nth-last-child(1),.award-list .award-row:nth-last-child(2){border-bottom:1px solid var(--line);}
-.award-name{font-size:.92rem;color:var(--ink);}
-.award-year{font-size:.76rem;color:var(--ink3);white-space:nowrap;}
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,44rem) 232px;gap:2.6rem;align-items:start;}
+.about p{margin-bottom:1.1em;}
+.about dl{font-size:1rem;line-height:1.5;margin-top:.4rem;}
+.about dl div{display:flex;gap:.6rem;}
+.about dt{font-family:var(--display);font-weight:600;flex:0 0 6.2rem;}
+.about dd{margin:0;}
+figure.portrait img{width:100%;border:1px solid var(--ink);padding:5px;background:#fff;}
+figure.portrait figcaption{font-size:.9rem;font-style:italic;color:var(--ink2);margin-top:.5rem;}
 
-.gap-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem;margin-top:2.6rem;}
-.gap-card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:1.8rem;text-decoration:none;display:block;transition:border-color .2s;}
-.gap-card:hover{border-color:var(--accent);}
-.gap-issue{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--accent);margin-bottom:.7rem;display:block;}
-.gap-title{font-weight:700;font-size:1.06rem;color:var(--ink);line-height:1.4;margin-bottom:.7rem;letter-spacing:-.01em;}
-.gap-desc{font-size:.85rem;color:var(--ink2);line-height:1.7;}
+/* recognition */
+.awards{list-style:none;border-top:1px solid var(--hair);}
+.awards li{display:flex;justify-content:space-between;align-items:baseline;gap:1.5rem;padding:.7rem 0;border-bottom:1px solid var(--hair);font-size:1.05rem;line-height:1.4;}
+.awards .res{color:var(--blue);white-space:nowrap;font-variant-numeric:lining-nums;flex:0 0 auto;}
 
-.research-grid{margin-top:2.4rem;display:grid;grid-template-columns:1fr 1fr;gap:0 3rem;}
-.r-item{padding:1.2rem 0;border-top:1px solid var(--line);}
-.r-item:nth-last-child(-n+2){border-bottom:1px solid var(--line);}
-.r-tag{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--accent);margin-bottom:.5rem;display:block;}
-.r-title{font-weight:700;font-size:.98rem;color:var(--ink);margin-bottom:.5rem;}
-.r-body{font-size:.87rem;color:var(--ink2);line-height:1.75;}
+/* research */
+.research p{margin-bottom:1.05em;}
+.research b{font-family:var(--display);font-weight:600;}
 
-.faq-list{margin-top:2.6rem;max-width:760px;}
-.faq-item{border-top:1px solid var(--line);}
-.faq-item:last-child{border-bottom:1px solid var(--line);}
-.faq-q{display:flex;align-items:center;gap:1.2rem;width:100%;background:none;border:none;padding:1.4rem 0;text-align:left;cursor:pointer;color:var(--ink);}
-.faq-num{font-size:.78rem;color:var(--accent);font-weight:600;flex-shrink:0;}
-.faq-q-text{font-weight:600;font-size:1rem;flex:1;}
-.faq-icon{color:var(--ink3);font-size:1.1rem;transition:transform .25s;flex-shrink:0;}
-.faq-item.open .faq-icon{transform:rotate(45deg);}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;}
-.faq-item.open .faq-a{max-height:280px;}
-.faq-a p{color:var(--ink2);font-size:.9rem;line-height:1.8;padding:0 0 1.5rem 2.2rem;}
+/* contact */
+.email{font-family:var(--display);font-weight:600;font-size:clamp(1.35rem,3vw,1.9rem);letter-spacing:-.005em;word-break:break-all;}
+.contact p{margin-top:1rem;}
 
-.contact-strip{padding:6rem 0;text-align:left;}
-.contact-strip h2{max-width:none;font-size:clamp(2rem,5vw,3rem);}
-.contact-grid{display:grid;grid-template-columns:1fr auto;gap:2.5rem;align-items:center;}
-.contact-photo{width:120px;height:120px;border-radius:50%;overflow:hidden;border:1px solid var(--line2);flex-shrink:0;}
-.contact-photo img{width:100%;height:100%;object-fit:cover;display:block;}
-@media(max-width:700px){.contact-grid{grid-template-columns:1fr;}.contact-photo{width:88px;height:88px;}}
-.contact-email-big{display:inline-block;margin-top:1.8rem;font-weight:700;font-size:clamp(1.4rem,3vw,2rem);color:var(--accent);text-decoration:none;border-bottom:1px solid var(--line2);padding-bottom:.3rem;transition:color .2s;}
-.contact-email-big:hover{color:var(--ink);}
-.contact-strip-note{margin-top:1.8rem;font-size:.84rem;color:var(--ink3);}
+footer{margin-top:4.5rem;border-top:2px solid var(--ink);padding:1.6rem 0 3rem;font-size:.95rem;line-height:1.55;color:var(--ink2);}
+footer .motto{font-style:italic;color:var(--ink);margin-top:.5rem;}
 
-footer{padding:2rem 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
-.f-left{font-size:.78rem;color:var(--ink3);}
-.f-right{font-size:.86rem;color:var(--ink2);}
+/* article pages */
+.art-head{padding-top:2.6rem;max-width:54rem;}
+.art-head .deck,.art-head .byline{max-width:44rem;}
+.art-head h1{font-family:var(--display);font-weight:700;font-size:clamp(1.72rem,4.2vw,3.1rem);line-height:1.1;letter-spacing:-.014em;margin:.5rem 0 1.1rem;}
+.art-head .deck{margin-bottom:1.2rem;}
+.byline{font-size:.98rem;color:var(--ink2);padding:.9rem 0 1.6rem;border-bottom:1px solid var(--ink);font-variant-numeric:lining-nums;}
+.article-body{padding-top:2.1rem;}
+.article-body p{font-size:1.2rem;line-height:1.64;margin-bottom:1.3em;}
+.article-body p:first-of-type{font-size:1.3rem;line-height:1.55;}
+.article-body strong{font-weight:600;}
+.pullquote{margin:2.4rem 0;padding:1.2rem 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);}
+.pullquote p{font-family:var(--display);font-weight:500;font-style:italic;font-size:1.45rem;line-height:1.3;letter-spacing:-.005em;margin:0;}
+.stat-block{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem 2.2rem;margin:2.4rem 0;padding:1.3rem 0 1.5rem;border-top:2px solid var(--ink);border-bottom:1px solid var(--ink);}
+.stat-num{font-family:var(--display);font-weight:800;font-size:2.3rem;line-height:1;letter-spacing:-.01em;margin:0 0 .45rem;font-variant-numeric:normal;}
+.stat-label{font-size:.95rem;line-height:1.4;color:var(--ink2);margin:0;}
+.author{margin-top:2.6rem;padding-top:1.1rem;border-top:1px solid var(--ink);font-size:1rem;line-height:1.55;color:#2b2925;}
+.more{padding-top:2.8rem;}
+.more h2{font-family:var(--display);font-weight:700;font-size:1.3rem;margin-bottom:1rem;}
+.more .all{margin-top:1rem;font-size:1.05rem;}
 
-.reveal{opacity:0;animation:rise .6s ease forwards;}
-.hero-eyebrow{animation-delay:0s;}
-h1{animation-delay:.06s;}
-.hero-sub{animation-delay:.14s;}
-.hero-actions{animation-delay:.2s;}
-.hero-photo{animation-delay:.26s;}
-@keyframes rise{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
-
-@media(max-width:900px){
-  .wrap,.nav-inner{padding:0 1.3rem;}
-  .nav-links{display:none;}
-  .hero{padding:7rem 0 3rem;}
-  .hero-grid{grid-template-columns:1fr;gap:1.8rem;}
-  .hero-photo{max-width:260px;}
-  .about-grid{grid-template-columns:1fr;gap:1.6rem;}
-  .about-photo{max-width:220px;}
-  .quotes-grid{grid-template-columns:1fr;}
-  .award-list{grid-template-columns:1fr;}
-  .gap-grid{grid-template-columns:1fr;}
-  .research-grid{grid-template-columns:1fr;}
-  .r-item:nth-last-child(-n+2){border-bottom:none;}
-  .r-item:last-child{border-bottom:1px solid var(--line);}
-  .w-row{grid-template-columns:1fr;gap:.5rem;}
-  .w-arrow{display:none;}
-  .section{padding:3.4rem 0;}
-  .contact-strip{padding:4rem 0;}
+@media(max-width:720px){
+  body{font-size:18px;}
+  .top{padding-top:1rem;}
+  .top .name{width:100%;}
+  .top nav{gap:1.1rem;font-size:.98rem;}
+  .wordmark{margin-top:2.1rem;}
+  .ledger li{grid-template-columns:2.8rem 1fr;row-gap:.15rem;}
+  .ledger .t{grid-column:2;font-size:1.05rem;}
+  .ledger .d{grid-column:2;font-size:.9rem;}
+  .about{grid-template-columns:1fr;}
+  .pubs li{grid-template-columns:1fr;grid-template-rows:auto auto auto;row-gap:.1rem;}
+  .pubs .venue{grid-column:1;grid-row:1;}
+  .pubs .ptitle{grid-column:1;grid-row:2;}
+  .pubs .pdesc{grid-column:1;grid-row:3;}
+  .lead h2{font-size:1.62rem;}
+  figure.portrait{max-width:260px;order:-1;}
+  .awards li{flex-direction:column;gap:.1rem;}
+  .article-body p{font-size:1.14rem;}
+  .article-body p:first-of-type{font-size:1.22rem;}
+  .stat-block{gap:1.3rem 1.4rem;}
+  .stat-num{font-size:2rem;}
 }
 </style>
 </head>
 <body>
-
-<nav>
-  <div class="nav-inner">
-    <a class="nav-name" href="#top">Obongodu</a>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#writing">Writing</a>
-      <a href="#awards">Recognition</a>
-      <a href="#gap">The Gap</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <div class="status-pill"><span class="status-dot"></span>Open for collaboration</div>
-  </div>
-</nav>
-
-<div id="top">
-
-<header class="hero">
-  <div class="wrap">
-    <div class="hero-grid">
-      <div>
-        <p class="hero-eyebrow reveal">Law graduate — Governance researcher — Writer</p>
-        <h1 class="reveal">I write about the gap between what the law promises and what institutions deliver.</h1>
-        <p class="hero-sub reveal">Nigerian law graduate based in Uyo, researching anti-corruption law, whistleblower protection, and governance accountability across West Africa. Published in TheCable, Global Policy Journal, and International Law Blog.</p>
-        <div class="hero-actions reveal">
-          <a class="btn-primary" href="#writing">Read my work</a>
-          <div class="hero-links">
-            <a href="mailto:obomgodu@gmail.com">Email</a>
-            <a href="#gap">The Accountability Gap</a>
-          </div>
-        </div>
-      </div>
-      <div class="hero-photo reveal">
-        <img src="photo-hero.jpg" alt="Obongodu Paul Unanam"/>
-      </div>
-    </div>
-  </div>
+<div class="page">
+<header class="top">
+  <a class="name" href="/">Obongodu Paul Unanam</a>
+  <nav><a href="#latest">Latest</a><a href="#issues">Issues</a><a href="#writing">Writing</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
 </header>
 
-<section class="section" id="about">
-  <div class="wrap">
-    <p class="sec-eyebrow">Profile</p>
-    <h2>Trained in law. I spend my time in the space it leaves open.</h2>
-    <div class="about-grid">
-      <div class="about-photo">
-        <img src="photo-field.jpg" alt="Obongodu Paul Unanam at a civic education workshop"/>
-      </div>
-      <div class="about-body">
-        <p>I graduated from the University of Uyo Faculty of Law in 2025. My dissertation examined Nigeria's anti-corruption legal framework, and it left me with a question I have not stopped asking since: why does enforcement fail so consistently when the legislation says otherwise.</p>
-        <p>Most of my research sits at the intersection of <strong>anti-corruption institutional design</strong>, <strong>UNCAC implementation</strong>, and <strong>whistleblower protection</strong>. I am particularly interested in how the African human rights system treats people who report wrongdoing. The short answer is: not well. The longer answer is what I keep publishing about.</p>
-        <p>I also write fiction and personal essays. The best governance writing and the best storytelling do the same thing. They make you feel the weight of something you could previously walk past without noticing.</p>
-        <p>I interned at the Akwa Ibom State Ministry of Justice during my studies, and at Nwoko and Co, Access Law House, and Humanity Voice Foundation. I am open to research collaboration, legal commentary, policy writing, and editorial commissions.</p>
-        <div class="meta-row">
-          <div>
-            <p class="meta-label">Education</p>
-            <p class="meta-val">LL.B, University of Uyo, 2025</p>
-          </div>
-          <div>
-            <p class="meta-label">Based in</p>
-            <p class="meta-val">Uyo, Akwa Ibom, Nigeria</p>
-          </div>
-          <div>
-            <p class="meta-label">Current</p>
-            <p class="meta-val">Interning at Blocklaw Consulting</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<h1 class="wordmark"><span>The Accountability</span><span>Gap</span></h1>
+<p class="standfirst">The distance between what Nigerian law promises and what Nigerian institutions deliver, one specific gap each week. Written in Uyo by Obongodu Paul Unanam and published every Thursday.</p>
+
+<section class="lead col" id="latest">
+  <p class="kicker"><b>Issue 022</b> Thursday 15 October 2026</p>
+  <h2><a href="issue-022.html">The EFCC Has Had Nineteen Years to Charge Atiku. This Week, 128 Days Before the Election, It Reopened His File Instead.</a></h2>
+  <p class="deck">The EFCC wrote its report on Atiku Abubakar in 2006, while he held immunity. The immunity ended in May 2007. No charge followed, and no decision not to charge either. On Monday a former lawmaker spent six hours at the commission&#x27;s headquarters adopting a petition about that report, and by Wednesday the commission said an investigation had commenced. The problem is not that the file reopened. It is that nothing ever required it to close.</p>
+  <p class="read"><a href="issue-022.html">Read issue 022</a></p>
 </section>
 
-<section class="section">
-  <div class="wrap">
-    <p class="sec-eyebrow">From the work itself</p>
-    <h2>Not endorsements. Excerpts.</h2>
-    <p class="sec-intro">I don't have client testimonials. I have lines from pieces that made readers stop scrolling.</p>
-    <div class="quotes-grid">
-      <div class="quote-card">
-        <p class="quote-text">"An error is a mistake that gets corrected when found. A vulnerability is a structural gap that can be exploited repeatedly because no one is required to check."</p>
-        <p class="quote-attr">Issue 008 — The Fake Agency Budget</p>
-      </div>
-      <div class="quote-card">
-        <p class="quote-text">"Two out of every three naira the government collects goes straight to debt repayment. Before a hospital sees money. Before a road gets fixed. Before a teacher gets paid."</p>
-        <p class="quote-attr">Issue 007 — N159 Trillion</p>
-      </div>
-      <div class="quote-card">
-        <p class="quote-text">"Twelve years is not a legal process. It is a deterrence strategy in reverse."</p>
-        <p class="quote-attr">Issue 006 — The Two-Speed Justice System</p>
-      </div>
-    </div>
-    <div class="tag-strip">
-      <span class="tag">Anti-Corruption Law</span>
-      <span class="tag">Whistleblower Protection</span>
-      <span class="tag">UNCAC Implementation</span>
-      <span class="tag">Asset Recovery</span>
-      <span class="tag">Public Finance Oversight</span>
-      <span class="tag">ECOWAS Accountability</span>
-      <span class="tag">Governance Research</span>
-    </div>
-  </div>
+<section class="section" id="issues">
+  <h2>Every issue</h2>
+  <ol class="ledger" reversed><li><span class="n">022</span><span class="d">15 October 2026</span><span class="t"><a href="issue-022.html">The EFCC Has Had Nineteen Years to Charge Atiku. This Week, 128 Days Before the Election, It Reopened His File Instead.</a></span></li>
+<li><span class="n">021</span><span class="d">8 October 2026</span><span class="t"><a href="issue-021.html">The Only Court That Ever Tried Diezani Found Her Not Guilty. The EFCC Says That Has Nothing to Do With the Houses It Already Sold.</a></span></li>
+<li><span class="n">020</span><span class="d">1 October 2026</span><span class="t"><a href="issue-020.html">The EFCC Says Stolen Money Could Decide the 2027 Elections. Two of the Ruling Party&#x27;s Senate Candidates Are Under EFCC Investigation.</a></span></li>
+<li><span class="n">019</span><span class="d">24 September 2026</span><span class="t"><a href="issue-019.html">Nigeria&#x27;s Anti Corruption Agencies Asked for a Whistleblower Law Again on Wednesday. They Have Been Asking Since 2016.</a></span></li>
+<li><span class="n">018</span><span class="d">17 September 2026</span><span class="t"><a href="issue-018.html">The EFCC Fired 40 Staff for Corruption. A Petition Against One of Its Senior Officers Sat for 66 Days Before Anyone Outside the Building Knew It Existed.</a></span></li>
+<li><span class="n">017</span><span class="d">10 September 2026</span><span class="t"><a href="issue-017.html">Nigeria Built a System to Stop Ghost Workers. It Paid N941 Million to Ghosts Instead.</a></span></li>
+<li><span class="n">016</span><span class="d">3 September 2026</span><span class="t"><a href="issue-016.html">The EFCC Fired 40 of Its Own Staff for Corruption. Then Its Chairman Did Something This Newsletter Has Been Asking For Since July.</a></span></li>
+<li><span class="n">015</span><span class="d">27 August 2026</span><span class="t"><a href="issue-015.html">The Budget Manager Approving a Fake Agency&#x27;s Funding Had Never Seen the Rulebook He Was Supposed to Follow. ICPC Just Confirmed It in Writing.</a></span></li>
+<li><span class="n">014</span><span class="d">20 August 2026</span><span class="t"><a href="issue-014.html">He Won the Election. Then He Withdrew the Only Lawsuit That Could Have Told Nigeria Whether the EFCC Broke the Law.</a></span></li>
+<li><span class="n">013</span><span class="d">13 August 2026</span><span class="t"><a href="issue-013.html">The EFCC Froze a State&#x27;s Accounts Ten Days Before an Election. Nobody, Including the President, Has Confirmed There Was Ever a Court Order.</a></span></li>
+<li><span class="n">012</span><span class="d">6 August 2026</span><span class="t"><a href="issue-012.html">He Paid N400 Million to a Fake Government Agency. It Had Real Government Number Plates. Nobody Has Explained How.</a></span></li>
+<li><span class="n">011</span><span class="d">30 July 2026</span><span class="t"><a href="issue-011.html">The EFCC Wants to Investigate, Hold, and Sell the Same Seized Assets. Last Week&#x27;s Story Explains Why That Should Worry You.</a></span></li>
+<li><span class="n">010</span><span class="d">23 July 2026</span><span class="t"><a href="issue-010.html">Nigeria Has Been Recovering Stolen Assets for 27 Years. It Cannot Tell You Where Any of Them Are Now.</a></span></li>
+<li><span class="n">009</span><span class="d">16 July 2026</span><span class="t"><a href="issue-009.html">Nigeria&#x27;s Budget Is Missing Two Percent of GDP. The IMF Had to Say So Out Loud.</a></span></li>
+<li><span class="n">008</span><span class="d">9 July 2026</span><span class="t"><a href="issue-008.html">Nigeria Just Found a Fake Government Agency in Its Own Budget. The Scary Part Is Not What You Think.</a></span></li>
+<li><span class="n">007</span><span class="d">2 July 2026</span><span class="t"><a href="issue-007.html">Nigeria Owes N159 Trillion. Nobody Is Required to Explain Why.</a></span></li>
+<li><span class="n">006</span><span class="d">25 June 2026</span><span class="t"><a href="issue-006.html">The Two-Speed Justice System Nigeria Does Not Want to Talk About</a></span></li>
+<li><span class="n">005</span><span class="d">June 2026</span><span class="t"><a href="issue-005.html">Nigeria&#x27;s Anti-Corruption Agencies Are Now Blaming the Courts. They Are Not Entirely Wrong.</a></span></li>
+<li><span class="n">004</span><span class="d">June 2026</span><span class="t"><a href="issue-004.html">Why Nigeria&#x27;s Whistleblower Protection Bill Keeps Dying in Committee</a></span></li>
+<li><span class="n">003</span><span class="d">June 2026</span><span class="t"><a href="https://www.globalpolicyjournal.com/blog/09/06/2026/when-extraterritorial-enforcer-steps-back-west-africa" target="_blank" rel="noopener">When the Extraterritorial Enforcer Steps Back</a> <i>in Global Policy Journal</i></span></li>
+<li><span class="n">002</span><span class="d">June 2026</span><span class="t"><a href="https://internationallaw.blog/2026/06/08/legislative-omission-as-treaty-breach-nigeria-the-aucpcc-and-what-the-ecowas-court-has-left-undone/" target="_blank" rel="noopener">When Doing Nothing Becomes a Treaty Breach</a> <i>in International Law Blog</i></span></li>
+<li><span class="n">001</span><span class="d">May 2026</span><span class="t"><a href="https://www.thecable.ng/government-built-a-whistleblowing-portal-but-forgot-to-enact-laws-to-make-whistleblowing-safe/" target="_blank" rel="noopener">The Portal Invites You. The Law Does Not Protect You.</a> <i>in TheCable</i></span></li></ol>
 </section>
 
 <section class="section" id="writing">
-  <div class="wrap">
-    <p class="sec-eyebrow">Published Writing</p>
-    <h2>Work that has gone out into the world, and stayed there.</h2>
-    <div class="writing-list">
+  <h2>Published elsewhere</h2>
+  <ul class="pubs"><li><p class="venue">TheCable, May 2026</p><p class="ptitle"><a href="https://www.thecable.ng/government-built-a-whistleblowing-portal-but-forgot-to-enact-laws-to-make-whistleblowing-safe/" target="_blank" rel="noopener">Government Built a Whistleblowing Portal But Forgot to Enact Laws to Make Whistleblowing Safe</a></p><p class="pdesc">Nigeria&#x27;s federal whistleblowing policy has no statutory force. It cannot be enforced in any Nigerian court. This piece follows a former civil servant who used the government&#x27;s own reporting channel and spent the next year losing his job, facing criminal charges, and having police sent to his home.</p></li>
+<li><p class="venue">Global Policy Journal, University of Durham, June 2026</p><p class="ptitle"><a href="https://www.globalpolicyjournal.com/blog/09/06/2026/when-extraterritorial-enforcer-steps-back-west-africa" target="_blank" rel="noopener">When the Extraterritorial Enforcer Steps Back: West Africa</a></p><p class="pdesc">What happens to anti-corruption enforcement in West Africa when the external pressure that historically drove compliance withdraws, and which regional institutions actually step into that space.</p></li>
+<li><p class="venue">International Law Blog, June 2026</p><p class="ptitle"><a href="https://internationallaw.blog/2026/06/08/legislative-omission-as-treaty-breach-nigeria-the-aucpcc-and-what-the-ecowas-court-has-left-undone/" target="_blank" rel="noopener">Legislative Omission as Treaty Breach: Nigeria, the AUCPCC, and What the ECOWAS Court Has Left Undone</a></p><p class="pdesc">Nigeria ratified a convention requiring statutory whistleblower protection in 2006. Three separate bills have died in committee since 2001. This piece argues that two decades of legislative inaction has crossed into a breach of binding treaty obligation.</p></li>
+<li><p class="venue">IntLawGrrls, June 2026</p><p class="ptitle"><a href="https://ilg2.blog/2026/06/12/unacac-article-33-and-the-absent-obligation-nigerias-whistleblower-protection-gap-as-an-international-prroblem/" target="_blank" rel="noopener">UNCAC Article 33 and the Absent Obligation</a></p><p class="pdesc">UNCAC Article 33 only asks states to consider whistleblower protection, never to enact it. This piece argues the gap left by that soft language is not gender neutral.</p></li>
+<li><p class="venue">BAC Afrocentric Story Contest, first place, 2026</p><p class="ptitle"><a href="https://bukkieallisonconsulting.com/the-weight-of-a-gown/" target="_blank" rel="noopener">The Weight of a Gown</a></p><p class="pdesc">A story about what it costs to become who you were told you would be, and what you carry long after the ceremony is over.</p></li>
+<li><p class="venue">Dear Aliens Writing Contest, third place, 2026</p><p class="ptitle"><a href="https://www.dearaliens.net/winners/third.html" target="_blank" rel="noopener">What We Do When the Light Goes Out</a></p><p class="pdesc">An international competition asked what single document you would send to arriving extraterrestrials. This piece placed third from thousands of global entries, and is about generators, Nigeria, and the talent for filling the space between what you have and what you need.</p></li>
+<li><p class="venue">Corporate Compliance Insights, July 2026</p><p class="ptitle"><a href="https://www.corporatecomplianceinsights.com/your-whistleblower-hotline-does-not-work-nigeria/" target="_blank" rel="noopener">Your Whistleblower Hotline Does Not Work the Same Way in Nigeria</a></p><p class="pdesc">Most multinationals deploy internal reporting infrastructure as a uniform global system. This piece argues that assumption breaks down in Nigeria, where no statutory whistleblower protection exists.</p></li>
+<li><p class="venue">Africa Is a Country, August 2026</p><p class="ptitle"><a href="https://africasacountry.com/2026/08/the-prosecutions-that-never-happen" target="_blank" rel="noopener">The Prosecutions That Never Happen</a></p><p class="pdesc">Nigeria&#x27;s EFCC announces thousands of convictions a year, but Human Rights Watch has found only four against nationally prominent political figures across the agency&#x27;s entire history. This piece traces that gap back to the EFCC&#x27;s founding statute, which hands the president appointment and removal power over the very agency meant to hold his office accountable.</p></li>
+<li><p class="venue">SCC Times, SCC Online Blog, July 2026</p><p class="ptitle"><a href="https://www.scconline.com/blog/post/2026/07/13/anti-corruption-agencies-executive-control-nigeria-india-independence-problem/" target="_blank" rel="noopener">When Anti-Corruption Agencies Answer to the Executive: Nigeria, India, and the Independence Problem</a></p><p class="pdesc">A comparative look at why Nigeria&#x27;s EFCC and India&#x27;s CBI, two of the most visible anti-corruption agencies in the Global South, both answer to the executive that appoints their leadership. Written for India&#x27;s leading legal research platform, the piece argues that enforcement activity and institutional independence are not the same thing, and that neither country has built the second one yet.</p></li>
+<li><p class="venue">Journal du Droit Transnational, August 2026</p><p class="ptitle"><a href="https://journaldudroittransnational.it/deference-deferred-the-ecowas-court-nigerias-cybercrime-act-and-the-enforcement-problem-in-regional-cyber-law-harmonisation/" target="_blank" rel="noopener">Deference Deferred: The ECOWAS Court, Nigeria&#x27;s Cybercrime Act, and the Enforcement Problem in Regional Cyber Law Harmonisation</a></p><p class="pdesc">In 2020, the ECOWAS Community Court ordered Nigeria to repeal a provision of its Cybercrime Act for violating free expression rights. Nigeria took four years to act, during which the provision kept being used to arrest journalists and critics. This piece uses that delay to examine why regional courts in West Africa have no real mechanism to make a member state comply on any particular timeline.</p></li>
+<li><p class="venue">D+C Development and Cooperation, September 2026</p><p class="ptitle"><a href="https://www.dandc.eu/en/article/corruption-whistleblowers-law-nigeria" target="_blank" rel="noopener">Protecting the People Who Know Where the Money Went</a></p><p class="pdesc">Anti-corruption agencies depend on insiders coming forward, but Nigeria still has no law protecting whistleblowers from retaliation once they do. The piece argues that development programmes measuring anti-corruption progress by institutional capacity alone are missing the part that actually determines whether those institutions get any information at all.</p></li>
+<li><p class="venue">Journal of Arts and Sociological Research, September 2026</p><p class="ptitle"><a href="https://doi.org/10.70382/ajasr.v13i6.0148" target="_blank" rel="noopener">Regulating the Pre Campaign Finance Gap: Nomination Fees, Party Primaries, and Electoral Transparency in Nigeria</a></p><p class="pdesc">Nigeria&#x27;s 2026 Electoral Act tightened campaign finance rules but left the financing of party primaries, nomination fees, and consensus arrangements almost untouched, even though those processes decide who appears on the ballot at all. Co authored with Godwin Agaba Ochube and Umar Yakubu of the University of Uyo, this peer reviewed article maps that disclosure gap against the 2026/2027 primary cycle and argues that closing it needs both INEC regulatory interpretation and sustained civil society litigation strategy. Vol. 13(6), open access, Crossref DOI.</p></li></ul>
+</section>
 
-      <div class="w-row">
-        <p class="w-venue">TheCable<br>May 2026</p>
-        <div>
-          <a class="w-title" href="https://www.thecable.ng/government-built-a-whistleblowing-portal-but-forgot-to-enact-laws-to-make-whistleblowing-safe/" target="_blank" rel="noopener">Government Built a Whistleblowing Portal But Forgot to Enact Laws to Make Whistleblowing Safe</a>
-          <p class="w-desc">Nigeria's federal whistleblowing policy has no statutory force. It cannot be enforced in any Nigerian court. This piece follows a former civil servant who used the government's own reporting channel and spent the next year losing his job, facing criminal charges, and having police sent to his home.</p>
-        </div>
-        <p class="w-arrow">→</p>
-      </div>
-
-      <div class="w-row">
-        <p class="w-venue">Global Policy Journal<br>University of Durham<br>June 2026</p>
-        <div>
-          <a class="w-title" href="https://www.globalpolicyjournal.com/blog/09/06/2026/when-extraterritorial-enforcer-steps-back-west-africa" target="_blank" rel="noopener">When the Extraterritorial Enforcer Steps Back: West Africa</a>
-          <p class="w-desc">What happens to anti-corruption enforcement in West Africa when the external pressure that historically drove compliance withdraws, and which regional institutions actually step into that space.</p>
-        </div>
-        <p class="w-arrow">→</p>
-      </div>
-
-      <div class="w-row">
-        <p class="w-venue">International Law Blog<br>June 2026</p>
-        <div>
-          <a class="w-title" href="https://internationallaw.blog/2026/06/08/legislative-omission-as-treaty-breach-nigeria-the-aucpcc-and-what-the-ecowas-court-has-left-undone/" target="_blank" rel="noopener">Legislative Omission as Treaty Breach: Nigeria, the AUCPCC, and What the ECOWAS Court Has Left Undone</a>
-          <p class="w-desc">Nigeria ratified a convention requiring statutory whistleblower protection in 2006. Three separate bills have died in committee since 2001. This piece argues that two decades of legislative inaction has crossed into a breach of binding treaty obligation.</p>
-        </div>
-        <p class="w-arrow">→</p>
-      </div>
-
-      <div class="w-row">
-        <p class="w-venue">IntLawGrrls<br>June 2026</p>
-        <div>
-          <a class="w-title" href="https://ilg2.blog/2026/06/12/unacac-article-33-and-the-absent-obligation-nigerias-whistleblower-protection-gap-as-an-international-prroblem/" target="_blank" rel="noopener">UNCAC Article 33 and the Absent Obligation</a>
-          <p class="w-desc">UNCAC Article 33 only asks states to consider whistleblower protection, never to enact it. This piece argues the gap left by that soft language is not gender neutral.</p>
-        </div>
-        <p class="w-arrow">→</p>
-      </div>
-
-      <div class="w-row">
-        <p class="w-venue">BAC Afrocentric<br>Story Contest<br>1st Place, 2026</p>
-        <div>
-          <a class="w-title" href="https://bukkieallisonconsulting.com/the-weight-of-a-gown/" target="_blank" rel="noopener">The Weight of a Gown</a>
-          <p class="w-desc">A story about what it costs to become who you were told you would be, and what you carry long after the ceremony is over.</p>
-        </div>
-        <p class="w-arrow">→</p>
-      </div>
-
-      <div class="w-row">
-        <p class="w-venue">Dear Aliens<br>Writing Contest<br>3rd Place, 2026</p>
-        <div>
-          <a class="w-title" href="https://www.dearaliens.net/winners/third.html" target="_blank" rel="noopener">What We Do When the Light Goes Out</a>
-          <p class="w-desc">An international competition asked what single document you would send to arriving extraterrestrials. This piece placed third from thousands of global entries, and is about generators, Nigeria, and the talent for filling the space between what you have and what you need.</p>
-        </div>
-        <p class="w-arrow">→</p>
-      </div>
-
-      <div class="w-row">
-        <p class="w-venue">Corporate Compliance<br>Insights<br>July 2026</p>
-        <div>
-          <a class="w-title" href="https://www.corporatecomplianceinsights.com/your-whistleblower-hotline-does-not-work-nigeria/" target="_blank" rel="noopener">Your Whistleblower Hotline Does Not Work the Same Way in Nigeria</a>
-          <p class="w-desc">Most multinationals deploy internal reporting infrastructure as a uniform global system. This piece argues that assumption breaks down in Nigeria, where no statutory whistleblower protection exists.</p>
-        </div>
-        <p class="w-arrow">→</p>
-      </div>
-
-      <div class="w-row">
-  <p class="w-venue">Africa Is a Country<br>August 2026</p>
-  <div>
-    <a class="w-title" href="https://africasacountry.com/2026/08/the-prosecutions-that-never-happen" target="_blank" rel="noopener">The Prosecutions That Never Happen</a>
-    <p class="w-desc">Nigeria's EFCC announces thousands of convictions a year, but Human Rights Watch has found only four against nationally prominent political figures across the agency's entire history. This piece traces that gap back to the EFCC's founding statute, which hands the president appointment and removal power over the very agency meant to hold his office accountable.</p>
-  </div>
-  <p class="w-arrow">→</p>
-</div>
-
-<div class="w-row">
-  <p class="w-venue">SCC Times<br>SCC Online Blog<br>July 2026</p>
-  <div>
-    <a class="w-title" href="https://www.scconline.com/blog/post/2026/07/13/anti-corruption-agencies-executive-control-nigeria-india-independence-problem/" target="_blank" rel="noopener">When Anti-Corruption Agencies Answer to the Executive: Nigeria, India, and the Independence Problem</a>
-    <p class="w-desc">A comparative look at why Nigeria's EFCC and India's CBI, two of the most visible anti-corruption agencies in the Global South, both answer to the executive that appoints their leadership. Written for India's leading legal research platform, the piece argues that enforcement activity and institutional independence are not the same thing, and that neither country has built the second one yet.</p>
-  </div>
-  <p class="w-arrow">→</p>
-</div>
-
-      <div class="w-row">
-  <p class="w-venue">Journal du Droit<br>Transnational<br>August 2026</p>
-  <div>
-    <a class="w-title" href="https://journaldudroittransnational.it/deference-deferred-the-ecowas-court-nigerias-cybercrime-act-and-the-enforcement-problem-in-regional-cyber-law-harmonisation/" target="_blank" rel="noopener">Deference Deferred: The ECOWAS Court, Nigeria's Cybercrime Act, and the Enforcement Problem in Regional Cyber Law Harmonisation</a>
-    <p class="w-desc">In 2020, the ECOWAS Community Court ordered Nigeria to repeal a provision of its Cybercrime Act for violating free expression rights. Nigeria took four years to act, during which the provision kept being used to arrest journalists and critics. This piece uses that delay to examine why regional courts in West Africa have no real mechanism to make a member state comply on any particular timeline.</p>
-  </div>
-  <p class="w-arrow">→</p>
-</div>
-
-<div class="w-row">
-  <p class="w-venue">D+C, Development<br>and Cooperation<br>September 2026</p>
-  <div>
-    <a class="w-title" href="https://www.dandc.eu/en/article/corruption-whistleblowers-law-nigeria" target="_blank" rel="noopener">Protecting the People Who Know Where the Money Went</a>
-    <p class="w-desc">Anti-corruption agencies depend on insiders coming forward, but Nigeria still has no law protecting whistleblowers from retaliation once they do. The piece argues that development programmes measuring anti-corruption progress by institutional capacity alone are missing the part that actually determines whether those institutions get any information at all.</p>
-  </div>
-  <p class="w-arrow">→</p>
-</div>
-
-      <div class="w-row">
-  <p class="w-venue">Journal of Arts and<br>Sociological Research<br>September 2026</p>
-  <div>
-    <a class="w-title" href="https://doi.org/10.70382/ajasr.v13i6.0148" target="_blank" rel="noopener">Regulating the Pre Campaign Finance Gap: Nomination Fees, Party Primaries, and Electoral Transparency in Nigeria</a>
-    <p class="w-desc">Nigeria's 2026 Electoral Act tightened campaign finance rules but left the financing of party primaries, nomination fees, and consensus arrangements almost untouched, even though those processes decide who appears on the ballot at all. Co authored with Godwin Agaba Ochube and Umar Yakubu of the University of Uyo, this peer reviewed article maps that disclosure gap against the 2026/2027 primary cycle and argues that closing it needs both INEC regulatory interpretation and sustained civil society litigation strategy. Vol. 13(6), open access, Crossref DOI.</p>
-  </div>
-  <p class="w-arrow">→</p>
-      </div>
-      
+<section class="section" id="about">
+  <h2>About</h2>
+  <div class="about">
+    <div>
+      <p>I graduated from the University of Uyo Faculty of Law in 2025. My dissertation examined Nigeria&#x27;s anti corruption legal framework, and it left me with a question I have not stopped asking since: why does enforcement fail so consistently when the legislation says otherwise.</p><p>Most of my research sits where anti corruption institutional design, UNCAC implementation and whistleblower protection meet. I am particularly interested in how the African human rights system treats people who report wrongdoing. The short answer is: not well. The longer answer is what I keep publishing about.</p><p>I also write fiction and personal essays. The best governance writing and the best storytelling do the same thing. They make you feel the weight of something you could previously walk past without noticing.</p><p>I am not yet called to the bar, so what I publish is legal and policy analysis rather than legal practice, and it is framed that way. During my studies I interned at the Akwa Ibom State Ministry of Justice, at Nwoko and Co, Access Law House and Humanity Voice Foundation. I am now an intern on Blocklaw Consulting&#x27;s blockchain and digital assets law programme.</p>
+      <dl>
+        <div><dt>Education</dt><dd>LL.B, University of Uyo, 2025</dd></div>
+        <div><dt>Based in</dt><dd>Uyo, Akwa Ibom State, Nigeria</dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:obomgodu@gmail.com">obomgodu@gmail.com</a></dd></div>
+      </dl>
     </div>
+    <figure class="portrait">
+      <img src="photo-hero.jpg" alt="Obongodu Paul Unanam"/>
+    </figure>
   </div>
 </section>
 
-<section class="section" id="awards">
-  <div class="wrap">
-    <p class="sec-eyebrow">Recognition</p>
-    <h2>Competitions and awards.</h2>
-    <div class="award-list">
-      <div class="award-row"><p class="award-name">BAC Afrocentric Story Contest — The Weight of a Gown</p><p class="award-year">1st Place, 2026</p></div>
-      <div class="award-row"><p class="award-name">KB Foundation Essay Competition</p><p class="award-year">1st Place, 2025</p></div>
-      <div class="award-row"><p class="award-name">Dear Aliens International Writing Contest</p><p class="award-year">3rd Place, 2026</p></div>
-      <div class="award-row"><p class="award-name">Dafe Akpeye SAN Essay Competition, UniUyo Faculty of Law</p><p class="award-year">Winner</p></div>
-      <div class="award-row"><p class="award-name">Grooming Center Research Grant</p><p class="award-year">2025</p></div>
-      <div class="award-row"><p class="award-name">Blocklaw Consulting Essay Competition, UniUyo</p><p class="award-year">2nd Position, 2026</p></div>
-      <div class="award-row"><p class="award-name">PFF Essay Competition, Precious Fountain Foundation</p><p class="award-year">2nd Runner Up, 2026</p></div>
-    </div>
-  </div>
-</section>
-  
-<div id="blog"></div>
-<section class="section" id="gap">
-  <div class="wrap">
-    <p class="sec-eyebrow">The Accountability Gap</p>
-    <h2>A weekly newsletter on Nigerian governance, explained for the world.</h2>
-    <p class="sec-intro">One specific gap in Nigerian or West African accountability, every week. Not news. Not academic papers. Analysis written by someone who has read the statutes, followed the cases, and is not pretending any of this is fine.</p>
-    <div class="gap-grid">
-
-      <a class="gap-card" href="https://www.thecable.ng/government-built-a-whistleblowing-portal-but-forgot-to-enact-laws-to-make-whistleblowing-safe/" target="_blank" rel="noopener">
-        <span class="gap-issue">Issue 001 — May 2026</span>
-        <p class="gap-title">The Portal Invites You. The Law Does Not Protect You.</p>
-        <p class="gap-desc">Nigeria built a whistleblowing portal in 2016 and forgot to pass the law that would make using it safe.</p>
-      </a>
-
-      <a class="gap-card" href="https://internationallaw.blog/2026/06/08/legislative-omission-as-treaty-breach-nigeria-the-aucpcc-and-what-the-ecowas-court-has-left-undone/" target="_blank" rel="noopener">
-        <span class="gap-issue">Issue 002 — June 2026</span>
-        <p class="gap-title">When Doing Nothing Becomes a Treaty Breach</p>
-        <p class="gap-desc">Nigeria agreed in 2006 to protect whistleblowers by law. Twenty years later the law still does not exist.</p>
-      </a>
-
-      <a class="gap-card" href="https://www.globalpolicyjournal.com/blog/09/06/2026/when-extraterritorial-enforcer-steps-back-west-africa" target="_blank" rel="noopener">
-        <span class="gap-issue">Issue 003 — June 2026</span>
-        <p class="gap-title">When the Extraterritorial Enforcer Steps Back</p>
-        <p class="gap-desc">Anti-corruption enforcement in West Africa has always leaned on external pressure. What happens when it withdraws.</p>
-      </a>
-
-      <a class="gap-card" href="issue-004.html">
-        <span class="gap-issue">Issue 004 — June 2026</span>
-        <p class="gap-title">Why Nigeria's Whistleblower Protection Bill Keeps Dying in Committee</p>
-        <p class="gap-desc">Twenty five years, multiple bills, multiple assemblies. The bill still has not passed.</p>
-      </a>
-
-      <a class="gap-card" href="issue-005.html">
-        <span class="gap-issue">Issue 005 — June 2026</span>
-        <p class="gap-title">Nigeria's Anti-Corruption Agencies Are Now Blaming the Courts</p>
-        <p class="gap-desc">The EFCC secured 1,417 convictions in early 2025. The cases involving real money keep ending in acquittals.</p>
-      </a>
-
-      <a class="gap-card" href="issue-006.html">
-        <span class="gap-issue">Issue 006 — June 25, 2026</span>
-        <p class="gap-title">The Two-Speed Justice System Nigeria Does Not Want to Talk About</p>
-        <p class="gap-desc">60% of corruption cases against public officials remain unresolved. Cases involving governors take 6 to 15 years.</p>
-      </a>
-
-      <a class="gap-card" href="issue-007.html">
-        <span class="gap-issue">Issue 007 — July 2, 2026</span>
-        <p class="gap-title">Nigeria Owes N159 Trillion. Nobody Is Required to Explain Why.</p>
-        <p class="gap-desc">In four years Nigeria's debt grew by 380%. Two out of three naira collected goes to debt service.</p>
-      </a>
-
-      <a class="gap-card" href="issue-008.html">
-        <span class="gap-issue">Issue 008 — July 9, 2026</span>
-        <p class="gap-title">Nigeria Just Found a Fake Government Agency in Its Own Budget</p>
-        <p class="gap-desc">A fictitious council took N1.3 billion with no legal instrument of establishment. Nobody checked.</p>
-      </a>
-
-      <a class="gap-card" href="issue-009.html">
-        <span class="gap-issue">Issue 009 — July 16, 2026</span>
-        <p class="gap-title">Nigeria's Budget Is Missing Two Percent of GDP. The IMF Had to Say So Out Loud.</p>
-        <p class="gap-desc">Two percent of Nigeria's GDP in public spending never made it into the official budget documents.</p>
-      </a>
-
-      <a class="gap-card" href="issue-010.html">
-        <span class="gap-issue">Issue 010 — July 23, 2026</span>
-        <p class="gap-title">Nigeria Has Been Recovering Stolen Assets for 27 Years. It Cannot Tell You Where Any of Them Are Now.</p>
-        <p class="gap-desc">The House just admitted there is no register tracking what happens to what Nigeria recovers.</p>
-      </a>
-
-      <a class="gap-card" href="issue-011.html">
-        <span class="gap-issue">Issue 011 — July 30, 2026</span>
-        <p class="gap-title">The EFCC Wants to Investigate, Hold, and Sell the Same Seized Assets. Last Week's Story Explains Why That Should Worry You.</p>
-        <p class="gap-desc">The Nigeria Association of Auctioneers says the EFCC has no legal right to be both custodian and seller of the vehicles it seizes. The same dispute happened during Ibrahim Magu's tenure. This time the commission does not appear to be backing down.</p>
-      </a>
-
-      <a class="gap-card" href="issue-012.html">
-        <span class="gap-issue">Issue 012 — August 6, 2026</span>
-        <p class="gap-title">He Paid N400 Million to a Fake Government Agency. It Had Real Government Number Plates. Nobody Has Explained How.</p>
-        <p class="gap-desc">Gbenga Collins told the House committee investigating the PFIPC scandal how he paid N400 million based on a Lexus SUV with federal plates, an office inside the Federal Secretariat, and a director general title that turned out not to exist.</p>
-      </a>
-
-      <a class="gap-card" href="issue-013.html">
-<span class="gap-issue">Issue 013 — August 13, 2026</span>
-<p class="gap-title">The EFCC Froze a State's Accounts Ten Days Before an Election. Nobody, Including the President, Has Confirmed There Was Ever a Court Order.</p>
-<p class="gap-desc">EFCC froze Osun's statutory accounts citing an N11 billion fraud probe. President Tinubu ordered the freeze reversed, calling it embarrassing. New reporting shows the commission actually froze three accounts, not one, and whether a court order came first remains unsettled.</p>
-      </a>
-
-      <a class="gap-card" href="issue-014.html">
-<span class="gap-issue">Issue 014 — August 20, 2026</span>
-<p class="gap-title">He Won the Election. Then He Withdrew the Only Lawsuit That Could Have Told Nigeria Whether the EFCC Broke the Law.</p>
-<p class="gap-desc">Governor Adeleke won re election in Osun, then hours later directed the state's Attorney General to withdraw the lawsuit against the EFCC. The legal question of whether a court order existed before the freeze will now never reach a judge.</p>
-      </a>
-
-      <a class="gap-card" href="issue-015.html">
-<span class="gap-issue">Issue 015 — August 27, 2026</span>
-<p class="gap-title">The Budget Manager Approving a Fake Agency's Funding Had Never Seen the Rulebook He Was Supposed to Follow. ICPC Just Confirmed It in Writing.</p>
-<p class="gap-desc">ICPC's own investigation faulted the Budget Office for onboarding the fake PFIPC into the 2026 budget without verifying a single governance document. Nigeria has also now found a second fake agency, using the same playbook, inside a different office entirely.</p>
-      </a>
-
-      <a class="gap-card" href="issue-016.html">
-<span class="gap-issue">Issue 016 — September 3, 2026</span>
-<p class="gap-title">The EFCC Fired 40 of Its Own Staff for Corruption. Then Its Chairman Did Something This Newsletter Has Been Asking For Since July.</p>
-<p class="gap-desc">EFCC chairman Ola Olukoyede disclosed that the commission dismissed more than 40 staff for corruption over three years, then published a detailed breakdown of where N1.23 trillion in recovered assets actually went. It is still not the public register Nigeria needs.</p>
-      </a>
-
-      <a class="gap-card" href="issue-017.html">
-<span class="gap-issue">Issue 017 — September 10, 2026</span>
-<p class="gap-title">Nigeria Built a System to Stop Ghost Workers. It Paid N941 Million to Ghosts Instead.</p>
-<p class="gap-desc">IPPIS was introduced in 2007 for one purpose, to remove people who do not exist from the federal payroll. ICPC has now recovered N941.9 million that the platform paid to hundreds of them anyway. Nobody has been prosecuted, and 467 account holders remain unidentified.</p>
-      </a>
-
-      <a class="gap-card" href="issue-018.html">
-<span class="gap-issue">Issue 018 — September 17, 2026</span>
-<p class="gap-title">The EFCC Fired 40 Staff for Corruption. A Petition Against One of Its Senior Officers Sat for 66 Days Before Anyone Outside the Building Knew It Existed.</p>
-<p class="gap-desc">Two weeks after the EFCC took credit for dismissing 40 of its own people, a 21 allegation petition against a senior officer surfaced. It had been sitting in the chairman's office since July 9. The commission's own spokesman said he had not heard of it.</p>
-      </a>
-
-      <a class="gap-card" href="issue-019.html">
-<span class="gap-issue">Issue 019 — September 24, 2026</span>
-<p class="gap-title">Nigeria's Anti Corruption Agencies Asked for a Whistleblower Law Again on Wednesday. They Have Been Asking Since 2016.</p>
-<p class="gap-desc">Civil society, the CCB, the ICPC and the EFCC sat on the same panels in Abuja and called it embarrassing that Nigeria still has no whistleblower protection law. The Senate passed one in March 2022. It never became law. The informants behind last week's EFCC petition asked for anonymity because they feared what would happen to them.</p>
-      </a>
-
-      <a class="gap-card" href="issue-020.html">
-<span class="gap-issue">Issue 020 — October 1, 2026</span>
-<p class="gap-title">The EFCC Says Stolen Money Could Decide the 2027 Elections. Two of the Ruling Party's Senate Candidates Are Under EFCC Investigation.</p>
-<p class="gap-desc">Ifeanyi Okowa was arrested over N1.3 trillion in derivation funds, defected to the APC, and won its Senate ticket for Delta North. Yahaya Bello is on trial and won the ticket for Kogi Central. The EFCC says both probes are still open. Still open is the point.</p>
-      </a>
-
-            <a class="gap-card" href="issue-021.html">
-<span class="gap-issue">Issue 021 — October 8, 2026</span>
-<p class="gap-title">The Only Court That Ever Tried Diezani Found Her Not Guilty. The EFCC Says That Has Nothing to Do With the Houses It Already Sold.</p>
-<p class="gap-desc">Nigeria forfeited Diezani Alison Madueke's Banana Island estate, N7.6 billion in cash and $40 million of jewellery on a civil standard, sold the properties in a week in January 2023, and has never tried her. In June a London jury acquitted her of all six bribery counts. On Monday the EFCC told a Federal High Court the verdict changes nothing. It is right. That is the gap.</p>
-            </a>
-      
-    </div>
-  </div>
+<section class="section col" id="prizes">
+  <h2>Prizes and grants</h2>
+  <ul class="awards"><li><span>BAC Afrocentric Story Contest, for The Weight of a Gown</span><span class="res">First place, 2026</span></li>
+<li><span>KB Foundation Essay Competition</span><span class="res">First place, 2025</span></li>
+<li><span>Dear Aliens International Writing Contest</span><span class="res">Third place, 2026</span></li>
+<li><span>Dafe Akpeye SAN Essay Competition, University of Uyo Faculty of Law</span><span class="res">Winner</span></li>
+<li><span>Grooming Center Research Grant</span><span class="res">2025</span></li>
+<li><span>Blocklaw Consulting Essay Competition, University of Uyo</span><span class="res">Second position, 2026</span></li>
+<li><span>PFF Essay Competition, Precious Fountain Foundation</span><span class="res">Second runner up, 2026</span></li></ul>
 </section>
 
-<section class="section" id="research">
-  <div class="wrap">
-    <p class="sec-eyebrow">Research Interests</p>
-    <h2>Where my thinking lives.</h2>
-    <div class="research-grid">
-      <div class="r-item">
-        <span class="r-tag">Framework v. Practice</span>
-        <p class="r-title">Anti-Corruption Institutional Design</p>
-        <p class="r-body">The gap between the EFCC and ICPC's structure on paper and their function in practice, and what a redesigned architecture would need to close it.</p>
-      </div>
-      <div class="r-item">
-        <span class="r-tag">Twenty Years Unpassed</span>
-        <p class="r-title">Whistleblower Protection</p>
-        <p class="r-body">Why the AUCPCC obligation to legislate protection has gone unmet for nearly twenty years, and what the African human rights system could do about it.</p>
-      </div>
-      <div class="r-item">
-        <span class="r-tag">Where the Trail Closes</span>
-        <p class="r-title">Asset Recovery</p>
-        <p class="r-body">Where POCA, UNCAC, and international cooperation frameworks quietly stop working, and what happens to funds after recovery is announced.</p>
-      </div>
-      <div class="r-item">
-        <span class="r-tag">Who Gets Told</span>
-        <p class="r-title">Governance Transparency</p>
-        <p class="r-body">How information moves, or fails to move, between institutions and the people those institutions exist to serve.</p>
-      </div>
-    </div>
-  </div>
+<section class="section col" id="research">
+  <h2>What I am working on</h2>
+  <div class="research col"><p><b>Anti corruption institutional design.</b> The gap between the EFCC and ICPC&#x27;s structure on paper and their function in practice, and what a redesigned architecture would need to close it.</p>
+<p><b>Whistleblower protection.</b> Why the AUCPCC obligation to legislate protection has gone unmet for nearly twenty years, and what the African human rights system could do about it.</p>
+<p><b>Asset recovery.</b> Where POCA, UNCAC and the international cooperation frameworks quietly stop working, and what happens to funds after recovery is announced.</p>
+<p><b>Governance transparency.</b> How information moves, or fails to move, between institutions and the people those institutions exist to serve.</p></div>
 </section>
 
-<section class="section" id="faq">
-  <div class="wrap">
-    <p class="sec-eyebrow">Frequently Asked Questions</p>
-    <h2>Things people usually ask.</h2>
-    <div class="faq-list">
-
-      <div class="faq-item">
-        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-          <span class="faq-num">01</span>
-          <span class="faq-q-text">What do you actually write about?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a"><p>Nigerian and West African governance accountability. Specifically anti-corruption law, whistleblower protection, budget transparency, and asset recovery. I write both academic legal commentary and a weekly newsletter that translates the same issues for a general international audience.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-          <span class="faq-num">02</span>
-          <span class="faq-q-text">Are you called to the bar?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a"><p>Not yet. I graduated from the University of Uyo Faculty of Law in 2025 and am not currently NYSC enrolled. My published work is legal and policy analysis rather than legal practice, and is framed accordingly.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-          <span class="faq-num">03</span>
-          <span class="faq-q-text">Can I cite or republish your work?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a"><p>Citing with attribution is welcome. For republishing full pieces, syndication, or translation, email me directly and we can work out terms.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-          <span class="faq-num">04</span>
-          <span class="faq-q-text">How do I follow new issues of The Accountability Gap?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a"><p>New issues publish every Thursday on this site. Bookmark the newsletter section above, or email me to be added to a direct notification list.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-          <span class="faq-num">05</span>
-          <span class="faq-q-text">Are you available for research collaboration or commissions?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a"><p>Yes. I take on legal commentary, policy writing, editorial commissions, and research collaboration, particularly anything touching anti-corruption law or governance accountability in West Africa. Email with as much detail on scope and timeline as you can give.</p></div>
-      </div>
-
-    </div>
-  </div>
+<section class="section col contact" id="contact">
+  <h2>Write to me</h2>
+  <a class="email" href="mailto:obomgodu@gmail.com">obomgodu@gmail.com</a>
+  <p>I take on legal commentary, policy writing, editorial commissions and research collaboration, particularly anything that touches anti corruption law or governance accountability in West Africa. Email with as much detail on scope and timeline as you can give.</p>
+  <p>Citing with attribution is welcome. For republishing, syndication or translation, write and we can work out terms. New issues of The Accountability Gap appear here every Thursday.</p>
 </section>
-
-<section class="contact-strip" id="contact">
-  <div class="wrap">
-    <p class="sec-eyebrow">Contact</p>
-    <div class="contact-grid">
-      <div>
-        <h2>If what you're working on matters, let's talk.</h2>
-        <a class="contact-email-big" href="mailto:obomgodu@gmail.com">obomgodu@gmail.com</a>
-        <p class="contact-strip-note">Based in Uyo, Akwa Ibom State, Nigeria — Available for remote collaboration worldwide</p>
-      </div>
-      <div class="contact-photo">
-        <img src="photo-contact.jpg" alt="Obongodu Paul Unanam"/>
-      </div>
-    </div>
-  </div>
-</section>
-
 <footer>
-  <div class="wrap" style="width:100%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
-    <div class="f-left">© 2026 Obongodu Paul Unanam — Uyo, Nigeria</div>
-    <div class="f-right">The portal invites you. The law does not protect you.</div>
+  <div class="col">
+    <p>Obongodu Paul Unanam writes from Uyo, Akwa Ibom State, Nigeria. This site is set in Besley and Newsreader and is built by hand, one HTML file at a time. © 2026.</p>
+    <p class="motto">The portal invites you. The law does not protect you.</p>
   </div>
 </footer>
-
 </div>
-
 </body>
 </html>
