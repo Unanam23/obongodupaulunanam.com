@@ -162,7 +162,7 @@ footer .motto{font-style:italic;color:var(--ink);margin-top:.5rem;}
 }
 
 /* October 2026 additions */
-:root{--ink3:#2b2925;--rule:#b9b2a3;--on-blue:#ffffff;}
+:root{--ink3:#2b2925;--rule:#b9b2a3;--on-blue:#ffffff;--field:#ffffff;--error:#9b1c1c;}
 [hidden]{display:none!important;}
 .top{padding:.45rem 0 .2rem;row-gap:0;}
 .top .name,.top nav a{display:inline-block;padding:.6rem 0;}
@@ -172,13 +172,31 @@ footer .motto{font-style:italic;color:var(--ink);margin-top:.5rem;}
 .all{margin-top:1rem;font-size:1.05rem;}
 .signup{display:grid;gap:.65rem;max-width:38rem;margin-top:1.8rem;}
 .signup.after{max-width:44rem;margin-top:2.6rem;padding-top:1.2rem;border-top:1px solid var(--ink);}
+.subform{display:grid;gap:.55rem;}
 .sublabel{font-family:var(--display);font-weight:600;font-size:1.08rem;line-height:1.3;}
-.subrow{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem;}
-.subbtn{display:inline-block;font-family:var(--display);font-weight:700;font-size:1rem;line-height:1.3;padding:.7rem 1.3rem;border:1px solid var(--blue);background:var(--blue);color:var(--on-blue);text-decoration:none;}
-.subbtn:hover{background:var(--blue2);border-color:var(--blue2);color:var(--on-blue);}
-.subbtn:focus-visible{outline:2px solid var(--blue);outline-offset:3px;}
+.subrow{display:flex;flex-wrap:wrap;gap:.5rem;}
+.subrow .formkit-field{flex:1 1 12rem;min-width:0;display:flex;}
+.subrow .formkit-input{width:100%;min-width:0;font:inherit;font-size:1.05rem;line-height:1.3;padding:.65rem .75rem;border:1px solid var(--ink);border-radius:0;background:var(--field);color:var(--ink);}
+.subrow .formkit-input::placeholder{color:var(--ink2);opacity:1;}
+.formkit-submit{position:relative;flex:0 0 auto;font-family:var(--display);font-weight:700;font-size:1rem;line-height:1.3;padding:.65rem 1.25rem;border:1px solid var(--blue);border-radius:0;background:var(--blue);color:var(--on-blue);cursor:pointer;}
+.formkit-submit:hover{background:var(--blue2);border-color:var(--blue2);}
+.subrow .formkit-input:focus-visible,.formkit-submit:focus-visible{outline:2px solid var(--blue);outline-offset:2px;}
+.formkit-spinner{display:none;position:absolute;inset:0;align-items:center;justify-content:center;gap:5px;}
+.formkit-spinner > div{width:7px;height:7px;border-radius:50%;background:var(--on-blue);animation:subdot 1.2s infinite ease-in-out both;}
+.formkit-spinner > div:nth-child(1){animation-delay:-.32s;}
+.formkit-spinner > div:nth-child(2){animation-delay:-.16s;}
+.formkit-submit[data-active] .formkit-spinner{display:flex;}
+.formkit-submit[data-active] > span{visibility:hidden;}
+@keyframes subdot{0%,80%,100%{transform:scale(0);}40%{transform:scale(1);}}
+@media(prefers-reduced-motion:reduce){.formkit-spinner > div{animation:none;}}
+.formkit-alert{list-style:none;font-size:1rem;line-height:1.5;padding:.55rem .8rem;border-left:3px solid var(--error);color:var(--error);background:var(--field);}
+.formkit-alert:empty{display:none;}
+.formkit-alert-success{border-left-color:var(--blue);color:var(--ink);}
 .subnote{font-size:.95rem;line-height:1.5;color:var(--ink2);}
-.subnote .addr{color:var(--ink);}
+.kitbadge{font-size:.85rem;color:var(--ink2);}
+.kitbadge a{color:var(--ink2);}
+.substatus{font-size:1rem;line-height:1.5;color:var(--ink);}
+.substatus:empty{display:none;}
 .footlinks{display:flex;flex-wrap:wrap;gap:.1rem 1.2rem;margin-top:.5rem;}
 .footlinks a{display:inline-block;padding:.35rem 0;}
 @media(max-width:720px){
@@ -240,9 +258,16 @@ footer .motto{font-style:italic;color:var(--ink);margin-top:.5rem;}
 <p class="note">Issues 001 to 003 ran in TheCable, International Law Blog and Global Policy Journal, so those links open the original articles.</p>
 
 <div class="signup after" id="subscribe">
-  <p class="sublabel">Get each new issue by email on Thursday</p>
-  <p class="subrow"><a class="subbtn" href="mailto:obomgodu@gmail.com?subject=Subscribe%20to%20The%20Accountability%20Gap&amp;body=Please%20add%20me%20to%20The%20Accountability%20Gap.%20I%20would%20like%20each%20issue%20by%20email%20on%20Thursday.">Subscribe by email</a></p>
-  <p class="subnote">The button opens your email app with a short request to <span class="addr">obomgodu@gmail.com</span>. Press send and I will add you. I use your address for this newsletter and nothing else. There is also an <a href="feed.xml">RSS feed</a>.</p>
+  <form class="seva-form formkit-form subform" action="https://app.kit.com/forms/10070777/subscriptions" method="post" data-sv-form="10070777" data-uid="c29711bd9e" data-format="inline" data-version="5" data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Almost done. Check your email and tap the link to confirm your subscription.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:true,&quot;url&quot;:&quot;https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}">
+    <label class="sublabel" for="sub-email">Get each new issue by email on Thursday</label>
+    <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+    <div data-element="fields" class="seva-fields formkit-fields subrow">
+      <div class="formkit-field"><input class="formkit-input" id="sub-email" name="email_address" aria-label="Email address" placeholder="Your email address" required type="email" autocomplete="email"/></div>
+      <button data-element="submit" class="formkit-submit"><div class="formkit-spinner"><div></div><div></div><div></div></div><span>Subscribe</span></button>
+    </div>
+    <p class="subnote" data-element="guarantee">Kit stores your address in the United States. I use it only to send this newsletter, and you can unsubscribe any time. There is also an <a href="feed.xml">RSS feed</a>.</p>
+    <p class="kitbadge"><a href="https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic" data-element="powered-by" class="formkit-powered-by-convertkit" target="_blank" rel="nofollow noopener">Built with Kit</a></p>
+  </form>
 </div>
 <footer>
   <div class="col">
@@ -252,6 +277,7 @@ footer .motto{font-style:italic;color:var(--ink);margin-top:.5rem;}
   </div>
 </footer>
 </div>
+<script src="https://f.convertkit.com/ckjs/ck.5.js" defer></script>
 <script>
 (function(){
   var list=document.getElementById('all-issues'),count=document.getElementById('count');
