@@ -11,10 +11,11 @@
 <meta property="og:url" content="https://obongodupaulunanam.com/"/>
 <meta property="og:image" content="https://obongodupaulunanam.com/photo-hero.jpg"/>
 <link rel="canonical" href="https://obongodupaulunanam.com/"/>
-<title>Obongodu Paul Unanam — The Accountability Gap</title>
+<title>Obongodu Paul Unanam | The Accountability Gap</title>
 <link rel="icon" href="favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"/>
 <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+<link rel="alternate" type="application/rss+xml" title="The Accountability Gap" href="feed.xml"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet"/>
@@ -160,72 +161,113 @@ footer .motto{font-style:italic;color:var(--ink);margin-top:.5rem;}
   .stat-block{gap:1.3rem 1.4rem;}
   .stat-num{font-size:2rem;}
 }
+
+/* October 2026 additions */
+:root{--ink3:#2b2925;--rule:#b9b2a3;--on-blue:#ffffff;}
+[hidden]{display:none!important;}
+.top{padding:.45rem 0 .2rem;row-gap:0;}
+.top .name,.top nav a{display:inline-block;padding:.6rem 0;}
+.ledger .t a,.pubs .ptitle a{text-decoration:underline;text-decoration-color:var(--rule);text-decoration-thickness:1px;text-underline-offset:.22em;}
+.ledger .t a:hover,.pubs .ptitle a:hover{text-decoration-color:currentColor;}
+.pubs .pdesc,.author{color:var(--ink3);}
+.all{margin-top:1rem;font-size:1.05rem;}
+.signup{display:grid;gap:.65rem;max-width:38rem;margin-top:1.8rem;}
+.signup.after{max-width:44rem;margin-top:2.6rem;padding-top:1.2rem;border-top:1px solid var(--ink);}
+.sublabel{font-family:var(--display);font-weight:600;font-size:1.08rem;line-height:1.3;}
+.subrow{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem;}
+.subbtn{display:inline-block;font-family:var(--display);font-weight:700;font-size:1rem;line-height:1.3;padding:.7rem 1.3rem;border:1px solid var(--blue);background:var(--blue);color:var(--on-blue);text-decoration:none;}
+.subbtn:hover{background:var(--blue2);border-color:var(--blue2);color:var(--on-blue);}
+.subbtn:focus-visible{outline:2px solid var(--blue);outline-offset:3px;}
+.subnote{font-size:.95rem;line-height:1.5;color:var(--ink2);}
+.subnote .addr{color:var(--ink);}
+.footlinks{display:flex;flex-wrap:wrap;gap:.1rem 1.2rem;margin-top:.5rem;}
+.footlinks a{display:inline-block;padding:.35rem 0;}
+@media(max-width:720px){
+  .top{padding-top:.3rem;}
+  .signup{margin-top:1.5rem;}
+}
+
+.editors{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 1.1rem;margin-top:.4rem;font-size:1rem;color:var(--ink2);}
+.editors b{font-family:var(--display);font-weight:600;color:var(--ink);font-size:.98rem;}
+.editors a{display:inline-block;padding:.3rem 0;}
+.read .dot{color:var(--ink2);margin:0 .6rem;}
+.subhead{font-family:var(--display);font-weight:600;font-size:1.08rem;line-height:1.3;margin:0 0 .75rem;}
+.pubs + .subhead{margin-top:2.4rem;}
+.contact-grid{display:grid;grid-template-columns:minmax(0,44rem) 232px;gap:2.6rem;align-items:start;}
+.contact-grid > div{min-width:0;}
+.contact .emailrow{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem;margin-top:0;}
+.copybtn{font-family:var(--text);font-size:.95rem;line-height:1.2;min-height:2.75rem;padding:.5rem .9rem;border:1px solid var(--ink);border-radius:0;background:transparent;color:var(--ink);cursor:pointer;}
+.copybtn:hover{background:var(--ink);color:var(--paper);}
+.copybtn:focus-visible{outline:2px solid var(--blue);outline-offset:2px;}
+@media(max-width:720px){
+  .contact-grid{grid-template-columns:1fr;gap:1.6rem;}
+  .editors b{flex-basis:100%;}
+}
 </style>
 </head>
 <body>
 <div class="page">
 <header class="top">
   <a class="name" href="/">Obongodu Paul Unanam</a>
-  <nav><a href="#latest">Latest</a><a href="#issues">Issues</a><a href="#writing">Writing</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <nav aria-label="Sections"><a href="#latest">Latest</a><a href="#issues">Issues</a><a href="#writing">Writing</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
 </header>
 
 <h1 class="wordmark"><span>The Accountability</span><span>Gap</span></h1>
 <p class="standfirst">The distance between what Nigerian law promises and what Nigerian institutions deliver, one specific gap each week. Written in Uyo by Obongodu Paul Unanam and published every Thursday.</p>
 
+<div class="signup" id="subscribe">
+  <p class="sublabel">Get it by email every Thursday</p>
+  <p class="subrow"><a class="subbtn" href="mailto:obomgodu@gmail.com?subject=Subscribe%20to%20The%20Accountability%20Gap&amp;body=Please%20add%20me%20to%20The%20Accountability%20Gap.%20I%20would%20like%20each%20issue%20by%20email%20on%20Thursday.">Subscribe by email</a></p>
+  <p class="subnote">The button opens your email app with a short request to <span class="addr">obomgodu@gmail.com</span>. Press send and I will add you. I use your address for this newsletter and nothing else. There is also an <a href="feed.xml">RSS feed</a>.</p>
+  <p class="editors"><b>For editors and researchers</b><a href="#writing">Published work</a><a href="#contact">Commissions and contact</a></p>
+</div>
+
 <section class="lead col" id="latest">
   <p class="kicker"><b>Issue 022</b> Thursday 15 October 2026</p>
   <h2><a href="issue-022.html">The EFCC Has Had Nineteen Years to Charge Atiku. This Week, 128 Days Before the Election, It Reopened His File Instead.</a></h2>
-  <p class="deck">The EFCC wrote its report on Atiku Abubakar in 2006, while he held immunity. The immunity ended in May 2007. No charge followed, and no decision not to charge either. On Monday a former lawmaker spent six hours at the commission&#x27;s headquarters adopting a petition about that report, and by Wednesday the commission said an investigation had commenced. The problem is not that the file reopened. It is that nothing ever required it to close.</p>
-  <p class="read"><a href="issue-022.html">Read issue 022</a></p>
+  <p class="deck">The EFCC wrote its report on Atiku Abubakar in 2006, while he still had immunity. The immunity ended in May 2007. Nobody charged him, and nobody decided not to. On Monday a former lawmaker spent six hours at the commission's headquarters adopting a petition about that report. By Wednesday the commission said it had opened an investigation. For nineteen years, no rule required anyone to close the file.</p>
+  <p class="read"><a href="issue-022.html">Read issue 022</a><span class="dot" aria-hidden="true">·</span><a href="#subscribe">Get the next one by email</a></p>
 </section>
 
 <section class="section" id="issues">
-  <h2>Every issue</h2>
-  <ol class="ledger" reversed><li><span class="n">022</span><span class="d">15 October 2026</span><span class="t"><a href="issue-022.html">The EFCC Has Had Nineteen Years to Charge Atiku. This Week, 128 Days Before the Election, It Reopened His File Instead.</a></span></li>
-<li><span class="n">021</span><span class="d">8 October 2026</span><span class="t"><a href="issue-021.html">The Only Court That Ever Tried Diezani Found Her Not Guilty. The EFCC Says That Has Nothing to Do With the Houses It Already Sold.</a></span></li>
-<li><span class="n">020</span><span class="d">1 October 2026</span><span class="t"><a href="issue-020.html">The EFCC Says Stolen Money Could Decide the 2027 Elections. Two of the Ruling Party&#x27;s Senate Candidates Are Under EFCC Investigation.</a></span></li>
-<li><span class="n">019</span><span class="d">24 September 2026</span><span class="t"><a href="issue-019.html">Nigeria&#x27;s Anti Corruption Agencies Asked for a Whistleblower Law Again on Wednesday. They Have Been Asking Since 2016.</a></span></li>
+  <h2>Recent issues</h2>
+  <ol class="ledger"><li><span class="n">021</span><span class="d">8 October 2026</span><span class="t"><a href="issue-021.html">The Only Court That Ever Tried Diezani Found Her Not Guilty. The EFCC Says That Has Nothing to Do With the Houses It Already Sold.</a></span></li>
+<li><span class="n">020</span><span class="d">1 October 2026</span><span class="t"><a href="issue-020.html">The EFCC Says Stolen Money Could Decide the 2027 Elections. Two of the Ruling Party's Senate Candidates Are Under EFCC Investigation.</a></span></li>
+<li><span class="n">019</span><span class="d">24 September 2026</span><span class="t"><a href="issue-019.html">Nigeria's Anti Corruption Agencies Asked for a Whistleblower Law Again on Wednesday. They Have Been Asking Since 2016.</a></span></li>
 <li><span class="n">018</span><span class="d">17 September 2026</span><span class="t"><a href="issue-018.html">The EFCC Fired 40 Staff for Corruption. A Petition Against One of Its Senior Officers Sat for 66 Days Before Anyone Outside the Building Knew It Existed.</a></span></li>
 <li><span class="n">017</span><span class="d">10 September 2026</span><span class="t"><a href="issue-017.html">Nigeria Built a System to Stop Ghost Workers. It Paid N941 Million to Ghosts Instead.</a></span></li>
 <li><span class="n">016</span><span class="d">3 September 2026</span><span class="t"><a href="issue-016.html">The EFCC Fired 40 of Its Own Staff for Corruption. Then Its Chairman Did Something This Newsletter Has Been Asking For Since July.</a></span></li>
-<li><span class="n">015</span><span class="d">27 August 2026</span><span class="t"><a href="issue-015.html">The Budget Manager Approving a Fake Agency&#x27;s Funding Had Never Seen the Rulebook He Was Supposed to Follow. ICPC Just Confirmed It in Writing.</a></span></li>
-<li><span class="n">014</span><span class="d">20 August 2026</span><span class="t"><a href="issue-014.html">He Won the Election. Then He Withdrew the Only Lawsuit That Could Have Told Nigeria Whether the EFCC Broke the Law.</a></span></li>
-<li><span class="n">013</span><span class="d">13 August 2026</span><span class="t"><a href="issue-013.html">The EFCC Froze a State&#x27;s Accounts Ten Days Before an Election. Nobody, Including the President, Has Confirmed There Was Ever a Court Order.</a></span></li>
-<li><span class="n">012</span><span class="d">6 August 2026</span><span class="t"><a href="issue-012.html">He Paid N400 Million to a Fake Government Agency. It Had Real Government Number Plates. Nobody Has Explained How.</a></span></li>
-<li><span class="n">011</span><span class="d">30 July 2026</span><span class="t"><a href="issue-011.html">The EFCC Wants to Investigate, Hold, and Sell the Same Seized Assets. Last Week&#x27;s Story Explains Why That Should Worry You.</a></span></li>
-<li><span class="n">010</span><span class="d">23 July 2026</span><span class="t"><a href="issue-010.html">Nigeria Has Been Recovering Stolen Assets for 27 Years. It Cannot Tell You Where Any of Them Are Now.</a></span></li>
-<li><span class="n">009</span><span class="d">16 July 2026</span><span class="t"><a href="issue-009.html">Nigeria&#x27;s Budget Is Missing Two Percent of GDP. The IMF Had to Say So Out Loud.</a></span></li>
-<li><span class="n">008</span><span class="d">9 July 2026</span><span class="t"><a href="issue-008.html">Nigeria Just Found a Fake Government Agency in Its Own Budget. The Scary Part Is Not What You Think.</a></span></li>
-<li><span class="n">007</span><span class="d">2 July 2026</span><span class="t"><a href="issue-007.html">Nigeria Owes N159 Trillion. Nobody Is Required to Explain Why.</a></span></li>
-<li><span class="n">006</span><span class="d">25 June 2026</span><span class="t"><a href="issue-006.html">The Two-Speed Justice System Nigeria Does Not Want to Talk About</a></span></li>
-<li><span class="n">005</span><span class="d">June 2026</span><span class="t"><a href="issue-005.html">Nigeria&#x27;s Anti-Corruption Agencies Are Now Blaming the Courts. They Are Not Entirely Wrong.</a></span></li>
-<li><span class="n">004</span><span class="d">June 2026</span><span class="t"><a href="issue-004.html">Why Nigeria&#x27;s Whistleblower Protection Bill Keeps Dying in Committee</a></span></li>
-<li><span class="n">003</span><span class="d">June 2026</span><span class="t"><a href="https://www.globalpolicyjournal.com/blog/09/06/2026/when-extraterritorial-enforcer-steps-back-west-africa" target="_blank" rel="noopener">When the Extraterritorial Enforcer Steps Back</a> <i>in Global Policy Journal</i></span></li>
-<li><span class="n">002</span><span class="d">June 2026</span><span class="t"><a href="https://internationallaw.blog/2026/06/08/legislative-omission-as-treaty-breach-nigeria-the-aucpcc-and-what-the-ecowas-court-has-left-undone/" target="_blank" rel="noopener">When Doing Nothing Becomes a Treaty Breach</a> <i>in International Law Blog</i></span></li>
-<li><span class="n">001</span><span class="d">May 2026</span><span class="t"><a href="https://www.thecable.ng/government-built-a-whistleblowing-portal-but-forgot-to-enact-laws-to-make-whistleblowing-safe/" target="_blank" rel="noopener">The Portal Invites You. The Law Does Not Protect You.</a> <i>in TheCable</i></span></li></ol>
+<li><span class="n">015</span><span class="d">27 August 2026</span><span class="t"><a href="issue-015.html">The Budget Manager Approving a Fake Agency's Funding Had Never Seen the Rulebook He Was Supposed to Follow. ICPC Just Confirmed It in Writing.</a></span></li>
+<li><span class="n">014</span><span class="d">20 August 2026</span><span class="t"><a href="issue-014.html">He Won the Election. Then He Withdrew the Only Lawsuit That Could Have Told Nigeria Whether the EFCC Broke the Law.</a></span></li></ol>
+  <p class="all"><a href="archive.html">Every issue, sorted by topic</a></p>
 </section>
 
 <section class="section" id="writing">
   <h2>Published elsewhere</h2>
-  <ul class="pubs"><li><p class="venue">TheCable, May 2026</p><p class="ptitle"><a href="https://www.thecable.ng/government-built-a-whistleblowing-portal-but-forgot-to-enact-laws-to-make-whistleblowing-safe/" target="_blank" rel="noopener">Government Built a Whistleblowing Portal But Forgot to Enact Laws to Make Whistleblowing Safe</a></p><p class="pdesc">Nigeria&#x27;s federal whistleblowing policy has no statutory force. It cannot be enforced in any Nigerian court. This piece follows a former civil servant who used the government&#x27;s own reporting channel and spent the next year losing his job, facing criminal charges, and having police sent to his home.</p></li>
-<li><p class="venue">Global Policy Journal, University of Durham, June 2026</p><p class="ptitle"><a href="https://www.globalpolicyjournal.com/blog/09/06/2026/when-extraterritorial-enforcer-steps-back-west-africa" target="_blank" rel="noopener">When the Extraterritorial Enforcer Steps Back: West Africa</a></p><p class="pdesc">What happens to anti-corruption enforcement in West Africa when the external pressure that historically drove compliance withdraws, and which regional institutions actually step into that space.</p></li>
-<li><p class="venue">International Law Blog, June 2026</p><p class="ptitle"><a href="https://internationallaw.blog/2026/06/08/legislative-omission-as-treaty-breach-nigeria-the-aucpcc-and-what-the-ecowas-court-has-left-undone/" target="_blank" rel="noopener">Legislative Omission as Treaty Breach: Nigeria, the AUCPCC, and What the ECOWAS Court Has Left Undone</a></p><p class="pdesc">Nigeria ratified a convention requiring statutory whistleblower protection in 2006. Three separate bills have died in committee since 2001. This piece argues that two decades of legislative inaction has crossed into a breach of binding treaty obligation.</p></li>
-<li><p class="venue">IntLawGrrls, June 2026</p><p class="ptitle"><a href="https://ilg2.blog/2026/06/12/unacac-article-33-and-the-absent-obligation-nigerias-whistleblower-protection-gap-as-an-international-prroblem/" target="_blank" rel="noopener">UNCAC Article 33 and the Absent Obligation</a></p><p class="pdesc">UNCAC Article 33 only asks states to consider whistleblower protection, never to enact it. This piece argues the gap left by that soft language is not gender neutral.</p></li>
-<li><p class="venue">BAC Afrocentric Story Contest, first place, 2026</p><p class="ptitle"><a href="https://bukkieallisonconsulting.com/the-weight-of-a-gown/" target="_blank" rel="noopener">The Weight of a Gown</a></p><p class="pdesc">A story about what it costs to become who you were told you would be, and what you carry long after the ceremony is over.</p></li>
-<li><p class="venue">Dear Aliens Writing Contest, third place, 2026</p><p class="ptitle"><a href="https://www.dearaliens.net/winners/third.html" target="_blank" rel="noopener">What We Do When the Light Goes Out</a></p><p class="pdesc">An international competition asked what single document you would send to arriving extraterrestrials. This piece placed third from thousands of global entries, and is about generators, Nigeria, and the talent for filling the space between what you have and what you need.</p></li>
-<li><p class="venue">Corporate Compliance Insights, July 2026</p><p class="ptitle"><a href="https://www.corporatecomplianceinsights.com/your-whistleblower-hotline-does-not-work-nigeria/" target="_blank" rel="noopener">Your Whistleblower Hotline Does Not Work the Same Way in Nigeria</a></p><p class="pdesc">Most multinationals deploy internal reporting infrastructure as a uniform global system. This piece argues that assumption breaks down in Nigeria, where no statutory whistleblower protection exists.</p></li>
-<li><p class="venue">Africa Is a Country, August 2026</p><p class="ptitle"><a href="https://africasacountry.com/2026/08/the-prosecutions-that-never-happen" target="_blank" rel="noopener">The Prosecutions That Never Happen</a></p><p class="pdesc">Nigeria&#x27;s EFCC announces thousands of convictions a year, but Human Rights Watch has found only four against nationally prominent political figures across the agency&#x27;s entire history. This piece traces that gap back to the EFCC&#x27;s founding statute, which hands the president appointment and removal power over the very agency meant to hold his office accountable.</p></li>
-<li><p class="venue">SCC Times, SCC Online Blog, July 2026</p><p class="ptitle"><a href="https://www.scconline.com/blog/post/2026/07/13/anti-corruption-agencies-executive-control-nigeria-india-independence-problem/" target="_blank" rel="noopener">When Anti-Corruption Agencies Answer to the Executive: Nigeria, India, and the Independence Problem</a></p><p class="pdesc">A comparative look at why Nigeria&#x27;s EFCC and India&#x27;s CBI, two of the most visible anti-corruption agencies in the Global South, both answer to the executive that appoints their leadership. Written for India&#x27;s leading legal research platform, the piece argues that enforcement activity and institutional independence are not the same thing, and that neither country has built the second one yet.</p></li>
-<li><p class="venue">Journal du Droit Transnational, August 2026</p><p class="ptitle"><a href="https://journaldudroittransnational.it/deference-deferred-the-ecowas-court-nigerias-cybercrime-act-and-the-enforcement-problem-in-regional-cyber-law-harmonisation/" target="_blank" rel="noopener">Deference Deferred: The ECOWAS Court, Nigeria&#x27;s Cybercrime Act, and the Enforcement Problem in Regional Cyber Law Harmonisation</a></p><p class="pdesc">In 2020, the ECOWAS Community Court ordered Nigeria to repeal a provision of its Cybercrime Act for violating free expression rights. Nigeria took four years to act, during which the provision kept being used to arrest journalists and critics. This piece uses that delay to examine why regional courts in West Africa have no real mechanism to make a member state comply on any particular timeline.</p></li>
-<li><p class="venue">D+C Development and Cooperation, September 2026</p><p class="ptitle"><a href="https://www.dandc.eu/en/article/corruption-whistleblowers-law-nigeria" target="_blank" rel="noopener">Protecting the People Who Know Where the Money Went</a></p><p class="pdesc">Anti-corruption agencies depend on insiders coming forward, but Nigeria still has no law protecting whistleblowers from retaliation once they do. The piece argues that development programmes measuring anti-corruption progress by institutional capacity alone are missing the part that actually determines whether those institutions get any information at all.</p></li>
-<li><p class="venue">Journal of Arts and Sociological Research, September 2026</p><p class="ptitle"><a href="https://doi.org/10.70382/ajasr.v13i6.0148" target="_blank" rel="noopener">Regulating the Pre Campaign Finance Gap: Nomination Fees, Party Primaries, and Electoral Transparency in Nigeria</a></p><p class="pdesc">Nigeria&#x27;s 2026 Electoral Act tightened campaign finance rules but left the financing of party primaries, nomination fees, and consensus arrangements almost untouched, even though those processes decide who appears on the ballot at all. Co authored with Godwin Agaba Ochube and Umar Yakubu of the University of Uyo, this peer reviewed article maps that disclosure gap against the 2026/2027 primary cycle and argues that closing it needs both INEC regulatory interpretation and sustained civil society litigation strategy. Vol. 13(6), open access, Crossref DOI.</p></li></ul>
+  <h3 class="subhead">Law and policy</h3>
+  <ul class="pubs"><li><p class="venue">Journal of Arts and Sociological Research, September 2026</p><p class="ptitle"><a href="https://doi.org/10.70382/ajasr.v13i6.0148" target="_blank" rel="noopener">Regulating the Pre Campaign Finance Gap: Nomination Fees, Party Primaries, and Electoral Transparency in Nigeria</a></p><p class="pdesc">Nigeria's 2026 Electoral Act tightened campaign finance rules but barely touched the money behind party primaries, nomination fees and consensus arrangements, and those are the processes that decide who reaches the ballot at all. The article maps that disclosure gap against the 2026/2027 primary cycle and argues that closing it needs INEC to use its regulatory powers and civil society to keep litigating. Written with Godwin Agaba Ochube and Umar Yakubu of the University of Uyo. Peer reviewed and open access, Vol. 13(6).</p></li>
+<li><p class="venue">D+C Development and Cooperation, September 2026</p><p class="ptitle"><a href="https://www.dandc.eu/en/article/corruption-whistleblowers-law-nigeria" target="_blank" rel="noopener">Protecting the People Who Know Where the Money Went</a></p><p class="pdesc">Anti corruption agencies depend on insiders coming forward, and Nigeria still has no law protecting those insiders from retaliation. The piece argues that development programmes which measure anti corruption progress by institutional capacity alone miss the thing that decides whether those institutions hear anything at all.</p></li>
+<li><p class="venue">Journal du Droit Transnational, August 2026</p><p class="ptitle"><a href="https://journaldudroittransnational.it/deference-deferred-the-ecowas-court-nigerias-cybercrime-act-and-the-enforcement-problem-in-regional-cyber-law-harmonisation/" target="_blank" rel="noopener">Deference Deferred: The ECOWAS Court, Nigeria's Cybercrime Act, and the Enforcement Problem in Regional Cyber Law Harmonisation</a></p><p class="pdesc">In 2020 the ECOWAS Community Court ordered Nigeria to repeal a provision of its Cybercrime Act for violating free expression. Nigeria took four years to act, and the provision was used to arrest journalists and critics in the meantime. The piece uses that delay to ask why West Africa's regional courts have no way to make a member state comply by any particular deadline.</p></li>
+<li><p class="venue">Africa Is a Country, August 2026</p><p class="ptitle"><a href="https://africasacountry.com/2026/08/the-prosecutions-that-never-happen" target="_blank" rel="noopener">The Prosecutions That Never Happen</a></p><p class="pdesc">The EFCC announces thousands of convictions a year, yet Human Rights Watch found only four against nationally prominent political figures in the agency's whole history. The piece traces that gap to the EFCC's founding statute, which gives the president appointment and removal power over the agency meant to hold his office accountable.</p></li>
+<li><p class="venue">SCC Times, SCC Online Blog, July 2026</p><p class="ptitle"><a href="https://www.scconline.com/blog/post/2026/07/13/anti-corruption-agencies-executive-control-nigeria-india-independence-problem/" target="_blank" rel="noopener">When Anti-Corruption Agencies Answer to the Executive: Nigeria, India, and the Independence Problem</a></p><p class="pdesc">Nigeria's EFCC and India's CBI are two of the most visible anti corruption agencies in the Global South, and both answer to the executive that appoints their leadership. The piece argues that a busy enforcement record and real independence are different things, and that neither country has built the second.</p></li>
+<li><p class="venue">Corporate Compliance Insights, July 2026</p><p class="ptitle"><a href="https://www.corporatecomplianceinsights.com/your-whistleblower-hotline-does-not-work-nigeria/" target="_blank" rel="noopener">Your Whistleblower Hotline Does Not Work the Same Way in Nigeria</a></p><p class="pdesc">Most multinationals run one internal reporting system across every country they operate in. The piece explains why that assumption fails in Nigeria, where whistleblowers have no statutory protection.</p></li>
+<li><p class="venue">IntLawGrrls, June 2026</p><p class="ptitle"><a href="https://ilg2.blog/2026/06/12/unacac-article-33-and-the-absent-obligation-nigerias-whistleblower-protection-gap-as-an-international-prroblem/" target="_blank" rel="noopener">UNCAC Article 33 and the Absent Obligation</a></p><p class="pdesc">Article 33 of UNCAC only asks states to consider protecting whistleblowers. It never requires them to pass a law. The piece argues that the gap left by that soft wording is not gender neutral.</p></li>
+<li><p class="venue">Global Policy Journal, University of Durham, June 2026</p><p class="ptitle"><a href="https://www.globalpolicyjournal.com/blog/09/06/2026/when-extraterritorial-enforcer-steps-back-west-africa" target="_blank" rel="noopener">When the Extraterritorial Enforcer Steps Back: West Africa</a></p><p class="pdesc">Outside pressure has long driven anti corruption compliance in West Africa. The piece asks what happens to enforcement when that pressure withdraws, and which regional institutions step into the space.</p></li>
+<li><p class="venue">International Law Blog, June 2026</p><p class="ptitle"><a href="https://internationallaw.blog/2026/06/08/legislative-omission-as-treaty-breach-nigeria-the-aucpcc-and-what-the-ecowas-court-has-left-undone/" target="_blank" rel="noopener">Legislative Omission as Treaty Breach: Nigeria, the AUCPCC, and What the ECOWAS Court Has Left Undone</a></p><p class="pdesc">In 2006 Nigeria ratified a convention that requires statutory whistleblower protection. Three bills have died in committee since 2001. The piece argues that two decades of inaction now amount to a breach of a binding treaty obligation.</p></li>
+<li><p class="venue">TheCable, May 2026</p><p class="ptitle"><a href="https://www.thecable.ng/government-built-a-whistleblowing-portal-but-forgot-to-enact-laws-to-make-whistleblowing-safe/" target="_blank" rel="noopener">Government Built a Whistleblowing Portal But Forgot to Enact Laws to Make Whistleblowing Safe</a></p><p class="pdesc">Nigeria's federal whistleblowing policy has no statutory force, so no Nigerian court can enforce it. The piece follows a former civil servant who used the government's own reporting channel and spent the next year losing his job, facing criminal charges and having police sent to his home.</p></li></ul>
+  <h3 class="subhead">Fiction and essays</h3>
+  <ul class="pubs"><li><p class="venue">BAC Afrocentric Story Contest, first place, 2026</p><p class="ptitle"><a href="https://bukkieallisonconsulting.com/the-weight-of-a-gown/" target="_blank" rel="noopener">The Weight of a Gown</a></p><p class="pdesc">A story about what it costs to become the person you were told you would be, and what you carry long after the ceremony.</p></li>
+<li><p class="venue">Dear Aliens Writing Contest, third place, 2026</p><p class="ptitle"><a href="https://www.dearaliens.net/winners/third.html" target="_blank" rel="noopener">What We Do When the Light Goes Out</a></p><p class="pdesc">The contest asked what single document you would send to arriving extraterrestrials. This one is about generators, Nigeria, and the talent for filling the space between what you have and what you need.</p></li></ul>
 </section>
 
 <section class="section" id="about">
   <h2>About</h2>
   <div class="about">
     <div>
-      <p>I graduated from the University of Uyo Faculty of Law in 2025. My dissertation examined Nigeria&#x27;s anti corruption legal framework, and it left me with a question I have not stopped asking since: why does enforcement fail so consistently when the legislation says otherwise.</p><p>Most of my research sits where anti corruption institutional design, UNCAC implementation and whistleblower protection meet. I am particularly interested in how the African human rights system treats people who report wrongdoing. The short answer is: not well. The longer answer is what I keep publishing about.</p><p>I also write fiction and personal essays. The best governance writing and the best storytelling do the same thing. They make you feel the weight of something you could previously walk past without noticing.</p><p>I am not yet called to the bar, so what I publish is legal and policy analysis rather than legal practice, and it is framed that way. During my studies I interned at the Akwa Ibom State Ministry of Justice, at Nwoko and Co, Access Law House and Humanity Voice Foundation. I am now an intern on Blocklaw Consulting&#x27;s blockchain and digital assets law programme.</p>
+      <p>I graduated from the University of Uyo Faculty of Law in 2025. My dissertation examined Nigeria's anti corruption legal framework, and I came out of it with a question I still have not put down. Why does enforcement fail so often when the law on paper says it should work?</p>
+      <p>Most of my research sits where anti corruption institutional design, UNCAC implementation and whistleblower protection meet. I am particularly interested in how the African human rights system treats people who report wrongdoing. So far, not well. Nearly everything I publish is the long version of that answer.</p>
+      <p>I also write fiction and personal essays. They usually start somewhere small, a generator or a government form, and end up at the same gap this newsletter covers.</p>
+      <p>I have not yet been called to the bar, so what I publish is legal and policy analysis, not legal advice. During my studies I interned at the Akwa Ibom State Ministry of Justice, Nwoko and Co, Access Law House and Humanity Voice Foundation. I am now an intern on Blocklaw Consulting's blockchain and digital assets law programme.</p>
       <dl>
         <div><dt>Education</dt><dd>LL.B, University of Uyo, 2025</dd></div>
         <div><dt>Based in</dt><dd>Uyo, Akwa Ibom State, Nigeria</dd></div>
@@ -233,7 +275,7 @@ footer .motto{font-style:italic;color:var(--ink);margin-top:.5rem;}
       </dl>
     </div>
     <figure class="portrait">
-      <img src="photo-hero.jpg" alt="Obongodu Paul Unanam"/>
+      <img src="photo-hero.jpg" alt="Obongodu Paul Unanam" width="900" height="600"/>
     </figure>
   </div>
 </section>
@@ -241,34 +283,54 @@ footer .motto{font-style:italic;color:var(--ink);margin-top:.5rem;}
 <section class="section col" id="prizes">
   <h2>Prizes and grants</h2>
   <ul class="awards"><li><span>BAC Afrocentric Story Contest, for The Weight of a Gown</span><span class="res">First place, 2026</span></li>
+<li><span>Blocklaw Consulting Essay Competition, University of Uyo</span><span class="res">Second place, 2026</span></li>
+<li><span>Dear Aliens International Writing Contest, for What We Do When the Light Goes Out</span><span class="res">Third place, 2026</span></li>
+<li><span>PFF Essay Competition, Precious Fountain Foundation</span><span class="res">Third place, 2026</span></li>
 <li><span>KB Foundation Essay Competition</span><span class="res">First place, 2025</span></li>
-<li><span>Dear Aliens International Writing Contest</span><span class="res">Third place, 2026</span></li>
-<li><span>Dafe Akpeye SAN Essay Competition, University of Uyo Faculty of Law</span><span class="res">Winner</span></li>
-<li><span>Grooming Center Research Grant</span><span class="res">2025</span></li>
-<li><span>Blocklaw Consulting Essay Competition, University of Uyo</span><span class="res">Second position, 2026</span></li>
-<li><span>PFF Essay Competition, Precious Fountain Foundation</span><span class="res">Second runner up, 2026</span></li></ul>
+<li><span>Grooming Center Research Grant</span><span class="res">Awarded, 2025</span></li>
+<li><span>Dafe Akpeye SAN Essay Competition, University of Uyo Faculty of Law</span><span class="res">First place</span></li></ul>
 </section>
 
 <section class="section col" id="research">
   <h2>What I am working on</h2>
-  <div class="research col"><p><b>Anti corruption institutional design.</b> The gap between the EFCC and ICPC&#x27;s structure on paper and their function in practice, and what a redesigned architecture would need to close it.</p>
+  <div class="research col"><p><b>Anti corruption institutional design.</b> The distance between how the EFCC and ICPC are built on paper and how they work in practice, and what a redesign would need to close it.</p>
 <p><b>Whistleblower protection.</b> Why the AUCPCC obligation to legislate protection has gone unmet for nearly twenty years, and what the African human rights system could do about it.</p>
-<p><b>Asset recovery.</b> Where POCA, UNCAC and the international cooperation frameworks quietly stop working, and what happens to funds after recovery is announced.</p>
-<p><b>Governance transparency.</b> How information moves, or fails to move, between institutions and the people those institutions exist to serve.</p></div>
+<p><b>Asset recovery.</b> Where POCA, UNCAC and international cooperation agreements stop working in practice, and what happens to the money after a recovery is announced.</p>
+<p><b>Governance transparency.</b> How information gets from public institutions to the people they serve, and where it stops.</p></div>
 </section>
 
-<section class="section col contact" id="contact">
+<section class="section contact" id="contact">
   <h2>Write to me</h2>
-  <a class="email" href="mailto:obomgodu@gmail.com">obomgodu@gmail.com</a>
-  <p>I take on legal commentary, policy writing, editorial commissions and research collaboration, particularly anything that touches anti corruption law or governance accountability in West Africa. Email with as much detail on scope and timeline as you can give.</p>
-  <p>Citing with attribution is welcome. For republishing, syndication or translation, write and we can work out terms. New issues of The Accountability Gap appear here every Thursday.</p>
+  <div class="contact-grid">
+    <div>
+      <p class="emailrow"><a class="email" id="email-text" href="mailto:obomgodu@gmail.com">obomgodu@gmail.com</a><button type="button" class="copybtn" id="copy-email">Copy address</button></p>
+      <p>I take on legal commentary, policy writing, editorial commissions and research collaboration, especially anything on anti corruption law or governance accountability in West Africa. Send as much detail on scope and timeline as you can.</p>
+      <p>You are welcome to cite my work with attribution. For republishing, syndication or translation, write to me and we can agree terms.</p>
+    </div>
+    <figure class="portrait">
+      <img src="photo-field.jpg" alt="Obongodu Paul Unanam at a civic education workshop" width="1000" height="667"/>
+      <figcaption>At a civic education workshop</figcaption>
+    </figure>
+  </div>
 </section>
 <footer>
   <div class="col">
     <p>Obongodu Paul Unanam writes from Uyo, Akwa Ibom State, Nigeria. © 2026.</p>
+    <p class="footlinks"><a href="#subscribe">Subscribe</a><a href="archive.html">Every issue</a><a href="feed.xml">RSS feed</a></p>
     <p class="motto">The portal invites you. The law does not protect you.</p>
   </div>
 </footer>
 </div>
+<script>
+(function(){
+  var b=document.getElementById('copy-email'),t=document.getElementById('email-text');
+  if(!b||!t)return;
+  function done(msg){b.textContent=msg;setTimeout(function(){b.textContent='Copy address';},2200);}
+  function select(){var r=document.createRange();r.selectNodeContents(t);var s=window.getSelection();s.removeAllRanges();s.addRange(r);done('Address selected');}
+  b.addEventListener('click',function(){
+    try{navigator.clipboard.writeText('obomgodu@gmail.com').then(function(){done('Copied');},select);}catch(e){select();}
+  });
+})();
+</script>
 </body>
 </html>
